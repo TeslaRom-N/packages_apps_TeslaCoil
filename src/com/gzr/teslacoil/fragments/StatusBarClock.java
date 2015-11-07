@@ -52,6 +52,7 @@ public class StatusBarClock extends SettingsPreferenceFragment implements
     private static final String STATUS_BAR_CLOCK_DATE_STYLE = "clock_date_style";
     private static final String STATUS_BAR_CLOCK_DATE_FORMAT = "clock_date_format";
     private static final String PREF_CLOCK_DATE_POSITION = "clock_date_position";
+    private static final String PREF_FONT_STYLE = "font_style";
 
     public static final int CLOCK_DATE_STYLE_LOWERCASE = 1;
     public static final int CLOCK_DATE_STYLE_UPPERCASE = 2;
@@ -63,6 +64,7 @@ public class StatusBarClock extends SettingsPreferenceFragment implements
     private ListPreference mClockDateStyle;
     private ListPreference mClockDateFormat;
     private ListPreference mClockDatePosition;
+    private ListPreference mFontStyle;
 
     @Override
     protected int getMetricsCategory() {
@@ -123,6 +125,14 @@ public class StatusBarClock extends SettingsPreferenceFragment implements
                 .getContentResolver(), Settings.System.STATUSBAR_CLOCK_DATE_POSITION,
                 0)));
         mClockDatePosition.setSummary(mClockDatePosition.getEntry());
+
+        // Clock style
+        mFontStyle = (ListPreference) findPreference(PREF_FONT_STYLE);
+        mFontStyle.setOnPreferenceChangeListener(this);
+        mFontStyle.setValue(Integer.toString(Settings.System.getInt(
+                getActivity().getContentResolver(),
+                Settings.System.STATUSBAR_CLOCK_FONT_STYLE, 4)));
+        mFontStyle.setSummary(mFontStyle.getEntry());
 
         parseClockDateFormats();
     }
@@ -235,7 +245,14 @@ public class StatusBarClock extends SettingsPreferenceFragment implements
             mClockDatePosition.setSummary(mClockDatePosition.getEntries()[index]);
             parseClockDateFormats();
             return true;
-          }
+        } else if (preference == mFontStyle) {
+            int val = Integer.parseInt((String) newValue);
+            int index = mFontStyle.findIndexOfValue((String) newValue);
+            Settings.System.putInt(getActivity().getContentResolver(),
+                    Settings.System.STATUSBAR_CLOCK_FONT_STYLE, val);
+            mFontStyle.setSummary(mFontStyle.getEntries()[index]);
+            return true;
+        }
       return false;
     }
 
