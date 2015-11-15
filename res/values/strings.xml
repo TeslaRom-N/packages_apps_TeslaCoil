@@ -26,6 +26,7 @@
     <string name="button_settings">Button settings</string>
     <string name="quicksettings_category">Quick settings</string>
     <string name="traffic_category">Traffic indicators</string>
+    <string name="statusbar_notifications_category">Notifications</string>
 
     <!-- Dialog -->
     <string name="teslacoil_dialog_title">Coming Soon!!</string>
@@ -157,5 +158,9 @@
 
     <!-- Navbar Tuner -->
     <string name="navbar_tuner_title">Navbar Tuner</string>
+
+    <!-- Notification Count in Statusbar -->
+    <string name="status_bar_notif_count_title">Show notification count</string>
+    <string name="status_bar_notif_count_summary">Display the number of pending notifications</string>
 
 </resources>
