@@ -26,6 +26,7 @@
     <string name="button_settings">Button settings</string>
     <string name="quicksettings_category">Quick settings</string>
     <string name="traffic_category">Traffic indicators</string>
+    <string name="statusbar_notifications_category">Notifications</string>
 
     <!-- Dialog -->
     <string name="teslacoil_dialog_title">Coming Soon!!</string>
@@ -169,5 +170,9 @@
     <string name="hardware_keys_action_in_app_search">In-app search</string>
     <string name="hardware_keys_action_launch_camera">Launch camera</string>
     <string name="hardware_keys_action_sleep">Turn screen off</string>
+
+    <!-- Notification Count in Statusbar -->
+    <string name="status_bar_notif_count_title">Show notification count</string>
+    <string name="status_bar_notif_count_summary">Display the number of pending notifications</string>
 
 </resources>
