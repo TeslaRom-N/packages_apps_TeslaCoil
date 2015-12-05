@@ -22,6 +22,7 @@
     <string name="statusbar_category">Status Bar</string>
     <string name="navigation_category">Navigation</string>
     <string name="multitasking_category">Multi-Tasking</string>
+    <string name="button_settings">Button settings</string>
 
     <!-- Dialog -->
     <string name="teslacoil_dialog_title">Coming Soon!!</string>
@@ -45,5 +46,9 @@
     <string name="advanced_reboot_disabled">Disable</string>
     <string name="advanced_reboot_hide_on_keyguard">Hide on lock screen</string>
     <string name="advanced_reboot_show_always">Show always</string>
+
+    <!-- Volume Key Rotation -->
+    <string name="swap_volume_buttons_title">Reorient</string>
+    <string name="swap_volume_buttons_summary">Swap volume buttons when the screen is rotated</string>
 
 </resources>
