@@ -57,5 +57,10 @@
             android:title="@string/clock_date_position"
             android:entries="@array/clock_date_position_entries"
             android:entryValues="@array/clock_date_position_values" />
+
+       <com.gzr.teslacoil.preference.SystemSettingSwitchPreference
+            android:key="clock_use_second"
+            android:title="@string/status_bar_show_clock_second_title"
+            android:defaultValue="false" />
 </PreferenceScreen>
 

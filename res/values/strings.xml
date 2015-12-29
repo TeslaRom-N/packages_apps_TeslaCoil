@@ -138,6 +138,7 @@
     <string name="clock_date_position">Date position</string>
     <string name="clock_date_right">Right of time</string>
     <string name="clock_date_left">Left of time</string>
+    <string name="status_bar_show_clock_second_title">Clock seconds</string>
 
     <!-- Tiles animation style  -->
     <string name="quicksettings_tiles_category">Tile animation options</string>
