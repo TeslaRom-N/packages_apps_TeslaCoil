@@ -27,4 +27,10 @@
         android:title="@string/status_bar_clock_title"
         android:layout="@layout/preference_statusbarclock" />
 
+    <PreferenceScreen
+        android:key="quicksettings"
+        android:fragment="com.gzr.teslacoil.fragments.QuickSettings"
+        android:layout="@layout/preference_systemui_tuner_qs"
+        android:title="@string/quicksettings_category" />
+
 </PreferenceScreen>
