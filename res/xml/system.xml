@@ -23,7 +23,7 @@
 
          <Preference
             android:key="powermenu"
-            android:fragment="com.dirtyunicorns.dutweaks.fragments.PowerMenu"
+            android:fragment="com.gzr.wolvesden.fragments.PowerMenu"
             android:layout="@layout/preference_powermenu"
             android:title="@string/powermenu_category" />
 

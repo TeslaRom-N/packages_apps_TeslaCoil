@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.dirtyunicorns.dutweaks.preference;
+package com.gzr.wolvesden.preference;
 
 import android.content.Context;
 import android.support.v7.preference.CheckBoxPreference;

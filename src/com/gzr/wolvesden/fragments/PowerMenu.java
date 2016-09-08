@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.dirtyunicorns.dutweaks.fragments;
+package com.gzr.wolvesden.fragments;
 
 import android.content.Context;
 import android.content.ContentResolver;
@@ -55,7 +55,7 @@ public class PowerMenu extends SettingsPreferenceFragment implements OnPreferenc
 
     @Override
     protected int getMetricsCategory() {
-        return MetricsEvent.DIRTYTWEAKS;
+        return MetricsEvent.WOLVESDEN;
     }
 
     @Override

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.dirtyunicorns.dutweaks;
+package com.gzr.wolvesden;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
