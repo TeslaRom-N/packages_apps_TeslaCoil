@@ -25,5 +25,11 @@
             android:fragment="com.gzr.teslacoil.fragments.Screenshot"
             android:layout="@layout/preference_screenshot"/>
 
+    <PreferenceScreen
+            android:key="recents"
+            android:fragment="com.gzr.teslacoil.fragments.Recents"
+            android:layout="@layout/preference_recents"
+            android:title="@string/recents_category" />
+
 </PreferenceScreen>
 
