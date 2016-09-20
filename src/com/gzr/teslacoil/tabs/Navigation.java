@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.gzr.wolvesden.tabs;
+package com.gzr.teslacoil.tabs;
 
 import android.content.Context;
 import android.content.ContentResolver;
@@ -34,22 +34,22 @@ import com.android.settings.SettingsPreferenceFragment;
 import com.android.internal.logging.MetricsProto.MetricsEvent;
 import com.android.settings.Utils;
 
-public class MultiTasking extends SettingsPreferenceFragment implements
+public class Navigation extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
-    private static final String TAG = "MultiTasking";
+    private static final String TAG = "Navigation";
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        addPreferencesFromResource(R.xml.multitasking);
+        addPreferencesFromResource(R.xml.navigation);
 
         ContentResolver resolver = getActivity().getContentResolver();
     }
 
     @Override
     protected int getMetricsCategory() {
-        return MetricsEvent.WOLVESDEN;
+        return MetricsEvent.TESLACOIL;
     }
 
     @Override

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.gzr.wolvesden.fragments;
+package com.gzr.teslacoil.fragments;
 
 import android.content.Context;
 import android.content.ContentResolver;
@@ -55,7 +55,7 @@ public class PowerMenu extends SettingsPreferenceFragment implements OnPreferenc
 
     @Override
     protected int getMetricsCategory() {
-        return MetricsEvent.WOLVESDEN;
+        return MetricsEvent.TESLACOIL;
     }
 
     @Override
