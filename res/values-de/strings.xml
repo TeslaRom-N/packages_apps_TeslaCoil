@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  Copyright (C) 2016 Tesla
+
+  This program is free software: you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version
+
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+
+  You should have received a copy of the GNU General Public License
+  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ -->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- Tabs -->
+    <string name="button_settings">Button Settings</string>
+
+    <!-- Dialog -->
+    <string name="teslacoil_dialog_title">Demnächst!!</string>
+    <string name="teslacoil_dialog_message">in Bearbeitung</string>
+    <string name="teslacoil_dialog_toast">Lies!</string>
+
+    <!-- Advanced reboot options -->
+    <string name="advanced_reboot_title">Erweiterter Neustart</string>
+    <string name="advanced_reboot_summary">Optionen im Power-Menü für einen Neustart in Recovery-und Bootloader</string>
+    <string name="advanced_reboot_dialog_title">Erweitertes Neustart Menü</string>
+    <string name="advanced_reboot_disabled">deaktivieren</string>
+    <string name="advanced_reboot_hide_on_keyguard">Ausblenden auf dem Sperrbildschirm</string>
+    <string name="advanced_reboot_show_always">immer anzeigen</string>
+
+    <!-- Volume Key Rotation -->
+    <string name="swap_volume_buttons_title">neu ausrichten</string>
+    <string name="swap_volume_buttons_summary">Swap-Lautstärke-Tasten, wenn der Bildschirm gedreht wird</string>
+
+    <!-- Volume rocker wake -->
+    <string name="volume_rocker_wake_summary">Durch drücken der Lautstärketasten Gerät aufwecken</string>
+
+    <!-- Volume rocker music control -->
+    <string name="volume_rocker_music_controls_title">Wiedergabesteuerung</string>
+    <string name="volume_rocker_music_controls_summary">Wenn der Bildschirm ausgeschaltet ist, langes Drücken der Lautstärketasten Musiktitel suchen</string>
+
+</resources>
