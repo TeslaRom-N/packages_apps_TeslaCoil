@@ -28,6 +28,7 @@
     <string name="quicksettings_category">Quick settings</string>
     <string name="traffic_category">Traffic indicators</string>
     <string name="statusbar_notifications_category">Notifications</string>
+    <string name="statusbar_items_category">Statusbar items</string>
 
     <string name="teslacoil_summary_title">Customize your device</string>
 

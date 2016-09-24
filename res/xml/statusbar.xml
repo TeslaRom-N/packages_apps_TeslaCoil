@@ -46,6 +46,16 @@
         android:title="@string/traffic_category" />
 
      <PreferenceScreen
+        android:key="systemui_tuner_statusbar"
+        android:title="@string/statusbar_items_category"
+        android:layout="@layout/preference_systemui_tuner_statusbaritems" >
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetPackage="com.android.systemui"
+            android:targetClass="com.android.systemui.tuner.TunerActivity" />
+     </PreferenceScreen>
+
+     <PreferenceScreen
         android:key="statusbar_notifications"
         android:fragment="com.gzr.teslacoil.fragments.StatusbarNotifications"
         android:layout="@layout/preference_statusbar_notifications"
