@@ -145,4 +145,7 @@
     <string name="qs_advanced_data_title">Advanced data tile</string>
     <string name="qs_advanced_data_summary">Enable one tap action to enable or disable data</string>
 
+    <!-- Option to show brightness bar in quick settings -->
+    <string name="show_brightness">Show brightness slider</string>
+
 </resources>
