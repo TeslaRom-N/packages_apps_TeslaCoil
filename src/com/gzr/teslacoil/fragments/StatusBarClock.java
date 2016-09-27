@@ -13,7 +13,7 @@
 * See the License for the specific language governing permissions and
 * limitations under the License.
 */
-package com.android.settings.tesla;
+package com.gzr.teslacoil.fragments;
 
 import android.app.ActivityManager;
 import android.app.AlertDialog;
@@ -30,7 +30,7 @@ import android.support.v7.preference.Preference;
 import android.support.v7.preference.PreferenceScreen;
 import android.support.v7.preference.PreferenceCategory;
 import android.support.v7.preference.Preference.OnPreferenceChangeListener;
-import android.preference.SwitchPreference;
+import android.support.v14.preference.SwitchPreference;
 import android.text.format.DateFormat;
 import android.view.View;
 import android.widget.EditText;
@@ -43,7 +43,7 @@ import com.android.settings.Utils;
 
 import java.util.Date;
 
-public class StatusBarSettings extends SettingsPreferenceFragment implements
+public class StatusBarClock extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
 
     private static final String STATUS_BAR_CLOCK_STYLE = "status_bar_clock";
@@ -71,7 +71,7 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        addPreferencesFromResource(R.xml.statusbar);
+        addPreferencesFromResource(R.xml.statusbarclock);
 
         ContentResolver resolver = getActivity().getContentResolver();
 
