@@ -43,4 +43,27 @@
     <string name="volume_rocker_music_controls_title">Wiedergabesteuerung</string>
     <string name="volume_rocker_music_controls_summary">Wenn der Bildschirm ausgeschaltet ist, langes Drücken der Lautstärketasten Musiktitel suchen</string>
 
+    <!-- StatusBar - Clock -->
+    <string name="status_bar_clock_title">Uhr Einstellungen</string>
+    <string name="status_bar_clock_style_title">Uhr Stil</string>
+    <string name="status_bar_clock_style_right">rechts</string>
+    <string name="status_bar_clock_style_left">links</string>
+    <string name="status_bar_clock_style_center">mitte</string>
+    <string name="status_bar_clock_style_hidden">versteckt</string>
+    <string name="status_bar_am_pm_title">AM/PM Stil</string>
+    <string name="status_bar_am_pm_info">24-Stunden-Uhr ist aktiviert</string>
+    <string name="status_bar_am_pm_small">Klein</string>
+    <string name="status_bar_am_pm_hidden">Versteckt (Standard)</string>
+    <string name="clock_date_display">Datum</string>
+    <string name="clock_date_display_summary">Anzeige für Datum vor der Uhr</string>
+    <string name="clock_date_display_none">nicht anzeigen</string>
+    <string name="clock_date_display_small">Kleine Schriftgröße</string>
+    <string name="clock_date_display_normal">Normale Schriftgröße</string>
+    <string name="clock_date_style">Datum Stil</string>
+    <string name="clock_date_style_lowercase">Kleinbuchstaben</string>
+    <string name="clock_date_style_uppercase">Großbuchstaben</string>
+    <string name="clock_date_format_custom">Benutzerdefiniertes Java Format</string>
+    <string name="clock_date_format">Datumsformat</string>
+    <string name="clock_date_string_edittext_title">Muss im Datumsformat sein z.B. MM/dd/yy</string>
+
 </resources>
