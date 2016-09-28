@@ -18,6 +18,7 @@
 
     <!-- Tabs -->
     <string name="button_settings">Button Settings</string>
+    <string name="quicksettings_category">Schnelleinstellungen</string>
 
     <!-- Dialog -->
     <string name="teslacoil_dialog_title">Demnächst!!</string>
@@ -65,5 +66,24 @@
     <string name="clock_date_format_custom">Benutzerdefiniertes Java Format</string>
     <string name="clock_date_format">Datumsformat</string>
     <string name="clock_date_string_edittext_title">Muss im Datumsformat sein z.B. MM/dd/yy</string>
+
+    <!-- Tiles animation style  -->
+    <string name="quicksettings_tiles_category">Kachel Animation Optionen</string>
+    <string name="qs_tile_animation_style_title">Kachel Animation Stil</string>
+    <string name="qs_tile_animation_duration_title">Kachel Animationsdauer</string>
+    <string name="qs_tile_animation_interpolator_title">Kachel Animation Interpolator</string>
+    <string name="qs_tile_animation_style_off">Keine Animation</string>
+    <string name="qs_tile_animation_style_flip">schnellen</string>
+    <string name="qs_tile_animation_style_rotate">rotieren</string>
+    <string name="qs_tile_animation_duration_low">langsam</string>
+    <string name="qs_tile_animation_duration_default">Standard</string>
+    <string name="qs_tile_animation_duration_fast">schnell</string>
+    <string name="qs_tile_animation_interpolator_accelerateInterpolator">beschleunigen</string>
+    <string name="qs_tile_animation_interpolator_decelerateInterpolator">verzögern</string>
+    <string name="qs_tile_animation_interpolator_accelerateDecelerateInterpolator">beschleunigen verzögern</string>
+    <string name="qs_tile_animation_interpolator_bounceInterpolator">springen</string>
+    <string name="qs_tile_animation_interpolator_overshootInterpolator">überschwingen</string>
+    <string name="qs_tile_animation_interpolator_anticipateInterpolator">voraussehen</string>
+    <string name="qs_tile_animation_interpolator_anticipateOvershootInterpolator">voraussehen überschwingen</string>
 
 </resources>
