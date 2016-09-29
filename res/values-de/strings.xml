@@ -86,4 +86,13 @@
     <string name="qs_tile_animation_interpolator_anticipateInterpolator">voraussehen</string>
     <string name="qs_tile_animation_interpolator_anticipateOvershootInterpolator">voraussehen überschwingen</string>
 
+    <!-- Quick Pulldown-->
+    <string name="quick_pulldown_title">Quick Pulldown</string>
+    <string name="quick_pulldown_summary">%1$s Rand der Statusleiste nach unten ziehen öffnet Schnelleinstellungen</string>
+    <string name="quick_pulldown_summary_always">Anzeigen der Schnelleinstellungen mit Pulldown</string>
+    <string name="quick_pulldown_off">aus</string>
+    <string name="quick_pulldown_left">links</string>
+    <string name="quick_pulldown_right">rechts</string>
+    <string name="quick_pulldown_always">immer</string>
+
 </resources>
