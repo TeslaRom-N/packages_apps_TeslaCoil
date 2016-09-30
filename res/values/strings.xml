@@ -141,4 +141,8 @@
     <string name="network_traffic_hidearrow">Hide arrows</string>
     <string name="network_traffic_hidearrow_summary">Hide the arrows in the traffic indicators</string>
 
+    <!-- Advanced data tile -->
+    <string name="qs_advanced_data_title">Advanced data tile</string>
+    <string name="qs_advanced_data_summary">Enable one tap action to enable or disable data</string>
+
 </resources>
