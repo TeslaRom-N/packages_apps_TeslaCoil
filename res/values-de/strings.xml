@@ -117,4 +117,10 @@
     <string name="qs_advanced_data_title">Erweiterte Daten Kachel</string>
     <string name="qs_advanced_data_summary">Aktivieren Sie eine Tipp Aktion zum aktivieren oder deaktivieren der Daten</string>
 
+    <!-- Quick Settings brightness slider -->
+    <string name="qs_brightness_slider_title">Helligkeitsregler</string>
+    <string name="qs_brightness_slider_summary">Helligkeitsregler im QS Panel anzeigen</string>
+    <string name="brightness_icon_title">Helligkeits Icon </string>
+    <string name="brightness_icon_summary">Zeigen Sie ein Helligkeit Symbol links vom Helligkeitsregler zur Einstellung der Helligkeit</string>
+
 </resources>
