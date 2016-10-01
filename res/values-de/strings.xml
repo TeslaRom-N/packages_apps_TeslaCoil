@@ -113,4 +113,8 @@
     <string name="network_traffic_hidearrow">Pfeile ausblenden</string>
     <string name="network_traffic_hidearrow_summary">Pfeile in Traffic Anzeige ausblenden</string>
 
+    <!-- Advanced data tile -->
+    <string name="qs_advanced_data_title">Erweiterte Daten Kachel</string>
+    <string name="qs_advanced_data_summary">Aktivieren Sie eine Tipp Aktion zum aktivieren oder deaktivieren der Daten</string>
+
 </resources>
