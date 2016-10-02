@@ -36,6 +36,12 @@
         android:summary="@string/qs_advanced_data_summary"
         android:defaultValue="false" />
 
+    <PreferenceScreen
+        android:key="status_bar_expanded_qs_settings"
+        android:title="@string/status_bar_expanded_qs_settings"
+        android:summary="@string/status_bar_expanded_qs_settings_summary"
+        android:fragment="com.gzr.teslacoil.fragments.StatusbarExpandedQSSettings" />
+
     <ListPreference
         android:key="quick_pulldown"
         android:title="@string/quick_pulldown_title"
