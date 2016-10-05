@@ -28,6 +28,12 @@
         android:layout="@layout/preference_buttons" />
 
     <PreferenceScreen
+        android:key="key_settings"
+        android:title="@string/key_settings_title"
+        android:fragment="com.gzr.teslacoil.fragments.KeySettings"
+        android:layout="@layout/preference_buttons" />
+
+    <PreferenceScreen
             android:key="navbar_tuner"
             android:title="@string/navbar_tuner_title"
             android:layout="@layout/preference_navbar_tuner" >
