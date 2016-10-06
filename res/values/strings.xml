@@ -48,6 +48,7 @@
     <string name="recents_category">Recents</string>
     <string name="other_settings">Others</string>
     <string name="headset_settings">Headset</string>
+    <string name="omniswitch_category">OmniSwitch</string>
 
     <string name="teslacoil_summary_title">Customize your device</string>
 

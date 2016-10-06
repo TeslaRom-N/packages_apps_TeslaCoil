@@ -26,6 +26,16 @@
             android:layout="@layout/preference_screenshot"/>
 
     <PreferenceScreen
+            android:key="omniswitch"
+            android:layout="@layout/preference_omniswitch"
+            android:title="@string/omniswitch_category" >
+            <intent
+                android:action="android.intent.action.MAIN"
+                android:targetPackage="org.omnirom.omniswitch"
+                android:targetClass="org.omnirom.omniswitch.SettingsActivity" />
+    </PreferenceScreen>
+
+    <PreferenceScreen
             android:key="recents"
             android:fragment="com.gzr.teslacoil.fragments.Recents"
             android:layout="@layout/preference_recents"
