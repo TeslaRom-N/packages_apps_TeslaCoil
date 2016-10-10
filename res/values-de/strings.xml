@@ -138,4 +138,27 @@
     <string name="hardware_keys_action_launch_camera">Kamera starten</string>
     <string name="hardware_keys_action_sleep">Bildschirm ausschalten</string>
 
+    <!-- Notification Count in Statusbar -->
+    <string name="status_bar_notif_count_title">Benachrichtigungszähler anzeigen</string>
+    <string name="status_bar_notif_count_summary">Anzeige der Anzahl der ausstehenden Benachrichtigungen</string>
+
+    <!-- Force expanded notifications -->
+    <string name="force_expanded_notifications_title">Erweiterte Benachrichtigungen erzwingen</string>
+    <string name="force_expanded_notifications_summary">Nur für Apps die erweiterte Benachrichtigungen unterstützen</string>
+
+    <!-- Disabling immersive mode messages -->
+    <string name="disable_immersive_message_title">Immersive Mode Meldungen deaktivieren</string>
+    <string name="disable_immersive_message_summary">Dadurch werden alle Immersive Mode Meldungen versteckt</string>
+
+    <!-- Expanded desktop -->
+    <string name="expanded_desktop_category">Erweiterter Bildschirm</string>
+    <string name="expanded_hide_nothing">nichts verbergen</string>
+    <string name="expanded_hide_status">Statusbar verbergen</string>
+    <string name="expanded_hide_navigation">Navbar verbergen</string>
+    <string name="expanded_hide_both">Beides vebergen</string>
+    <string name="expanded_nothing_to_show">Um eine benutzerdefinierte App Konfiguration für erweiterten Zustand hinzuzufügen, schalten Sie "Aktiviert für alle" aus</string>
+    <string name="expanded_desktop_state">Erweiterter Status</string>
+    <string name="expanded_enabled_for_all">für alle verfügbar</string>
+    <string name="expanded_user_configurable">Benutzer konfigurierbar</string>
+
 </resources>
