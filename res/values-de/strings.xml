@@ -161,4 +161,12 @@
     <string name="expanded_enabled_for_all">für alle verfügbar</string>
     <string name="expanded_user_configurable">Benutzer konfigurierbar</string>
 
+    <!-- QS settings -->
+    <string name="status_bar_expanded_qs_settings_summary">Wählen Sie die Anzahl der Zeilen und Spalten</string>
+    <string name="qs_rows_title">Zeilen</string>
+    <string name="qs_columns_title">Spalten</string>
+
+    <!-- Navbar toggle -->
+    <string name="navigation_bar_visible_summary">Navbar aktivieren oder deaktivieren</string>
+
 </resources>
