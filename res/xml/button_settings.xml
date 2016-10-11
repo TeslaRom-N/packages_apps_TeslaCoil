@@ -18,11 +18,6 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
-    <com.gzr.teslacoil.preference.SecureSettingSwitchPreference
-        android:key="navigation_bar_visible"
-        android:title="@string/navigation_bar_visible_title"
-        android:summary="@string/navigation_bar_visible_summary" />
-
     <SwitchPreference
         android:key="swap_volume_buttons"
         android:title="@string/swap_volume_buttons_title"

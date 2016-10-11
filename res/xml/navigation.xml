@@ -21,6 +21,11 @@
     android:layout="@layout/tab"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
+    <com.gzr.teslacoil.preference.SecureSettingSwitchPreference
+        android:key="navigation_bar_visible"
+        android:title="@string/navigation_bar_visible_title"
+        android:summary="@string/navigation_bar_visible_summary" />
+
     <PreferenceScreen
         android:key="button_settings"
         android:title="@string/button_settings"
