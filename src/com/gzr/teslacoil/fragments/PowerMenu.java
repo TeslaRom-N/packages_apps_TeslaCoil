@@ -35,8 +35,10 @@ import com.android.settings.Utils;
 
 public class PowerMenu extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
     private static final String KEY_ADVANCED_REBOOT = "advanced_reboot";
+    private static final String POWER_MENU_ANIMATIONS = "power_menu_animations";
 
     private ListPreference mAdvancedReboot;
+    private ListPreference mPowerMenuAnimations;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -51,6 +53,12 @@ public class PowerMenu extends SettingsPreferenceFragment implements OnPreferenc
                 getContentResolver(), Settings.Secure.ADVANCED_REBOOT, 1)));
         mAdvancedReboot.setSummary(mAdvancedReboot.getEntry());
         mAdvancedReboot.setOnPreferenceChangeListener(this);
+
+        mPowerMenuAnimations = (ListPreference) findPreference(POWER_MENU_ANIMATIONS);
+        mPowerMenuAnimations.setValue(String.valueOf(Settings.System.getInt(
+                getContentResolver(), Settings.System.POWER_MENU_ANIMATIONS, 0)));
+        mPowerMenuAnimations.setSummary(mPowerMenuAnimations.getEntry());
+        mPowerMenuAnimations.setOnPreferenceChangeListener(this);
     }
 
     @Override
@@ -69,10 +77,13 @@ public class PowerMenu extends SettingsPreferenceFragment implements OnPreferenc
                     Integer.valueOf((String) value));
             mAdvancedReboot.setValue(String.valueOf(value));
             mAdvancedReboot.setSummary(mAdvancedReboot.getEntry());
-        } else {
-            return false;
+        } else if (preference == mPowerMenuAnimations) {
+            Settings.System.putInt(getContentResolver(), Settings.System.POWER_MENU_ANIMATIONS,
+                    Integer.valueOf((String) value));
+            mPowerMenuAnimations.setValue(String.valueOf(value));
+            mPowerMenuAnimations.setSummary(mPowerMenuAnimations.getEntry());
+            return true;
         }
-
-        return true;
+        return false;
     }
 }
