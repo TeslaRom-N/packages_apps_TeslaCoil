@@ -460,4 +460,8 @@
     <!-- Lockscreen Shortcuts -->
     <string name="lockscreen_targets_title">Bottom L/R Shortcuts</string>
 
+    <!-- Weather in status bar -->
+    <string name="status_bar_show_weather_title">Show weather</string>
+    <string name="status_bar_show_weather_summary">Show the weather in the status bar header</string>
+
 </resources>
