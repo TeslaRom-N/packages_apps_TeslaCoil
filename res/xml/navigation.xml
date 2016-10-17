@@ -21,24 +21,16 @@
     android:layout="@layout/tab"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
-    <com.gzr.teslacoil.preference.SecureSettingSwitchPreference
-        android:key="navigation_bar_visible"
-        android:title="@string/navigation_bar_visible_title"
-        android:summary="@string/navigation_bar_visible_summary" />
+    <Preference
+        android:key="navigation_options"
+        android:fragment="com.gzr.teslacoil.fragments.NavbarSettings"
+        android:layout="@layout/preference_navigation"
+        android:title="@string/navigationbar_settings_title" />
 
     <PreferenceScreen
         android:key="button_settings"
         android:title="@string/button_settings"
         android:fragment="com.gzr.teslacoil.fragments.ButtonSettings"
         android:layout="@layout/preference_buttons" />
-
-    <PreferenceScreen
-            android:key="navbar_tuner"
-            android:title="@string/navbar_tuner_title"
-            android:layout="@layout/preference_navbar_tuner" >
-        <intent android:action="android.intent.action.MAIN"
-                android:targetPackage="com.android.systemui"
-                android:targetClass="com.android.systemui.tuner.NavbarActivity" />
-    </PreferenceScreen>
 
 </PreferenceScreen>
