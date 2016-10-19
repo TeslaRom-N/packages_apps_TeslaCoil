@@ -51,4 +51,9 @@
         android:layout="@layout/preference_statusbar_notifications"
         android:title="@string/statusbar_notifications_category" />
 
+     <PreferenceScreen
+        android:key="carrier_label_settings"
+        android:fragment="com.gzr.teslacoil.fragments.CarrierLabelSettings"
+        android:title="@string/carrier_label_settings_title" />
+
 </PreferenceScreen>
