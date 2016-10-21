@@ -21,5 +21,17 @@
     android:layout="@layout/tab"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
   
+        <com.gzr.teslacoil.preference.SecureSettingSwitchPreference
+            android:key="lockscreen_visualizer"
+            android:title="@string/lockscreen_visualizer_title"
+            android:defaultValue="true"/>
+
+        <PreferenceScreen
+            android:key="lockscreen_weather"
+            android:title="@string/lockscreen_weather_title"
+            android:fragment="com.gzr.teslacoil.fragments.LockScreenWeatherSettings"
+            android:layout="@layout/preference_weather" 
+            />
+
 </PreferenceScreen>
 
