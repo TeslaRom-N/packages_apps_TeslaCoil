@@ -28,6 +28,13 @@
              android:targetPackage="com.android.systemui"
              android:targetClass="com.android.systemui.tesla.LockscreenShortcutsActivity" />
     </PreferenceScreen>
-  
+
+        <PreferenceScreen
+            android:key="lockscreen_weather"
+            android:title="@string/lockscreen_weather_title"
+            android:fragment="com.gzr.teslacoil.fragments.LockScreenWeatherSettings"
+            android:layout="@layout/preference_weather" 
+            />
+
 </PreferenceScreen>
 
