@@ -430,4 +430,7 @@
     <string name="weather_settings_options_title">Location settings</string>
     <string name="weather_settings_summary">Choose location and other settings</string>
 
+    <!-- lock screen visualizer -->
+    <string name="lockscreen_visualizer_title">Display music visualizer</string>
+
 </resources>
