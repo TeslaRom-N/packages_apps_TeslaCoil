@@ -449,4 +449,10 @@
     <string name="power_menu_animation_bottom">Bottom</string>
     <string name="power_menu_animation_top">Top</string>
 
+    <!-- Heads up -->
+    <string name="headsup_section_header">Heads up notifications</string>
+    <string name="heads_up_notifications">Heads up</string>
+    <string name="summary_heads_up_enabled">Pop-up notifications are enabled</string>
+    <string name="summary_heads_up_disabled">Pop-up notifications are disabled</string>
+
 </resources>
