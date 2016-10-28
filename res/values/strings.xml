@@ -491,6 +491,12 @@
     <string name="status_bar_toggle_brightness">Brightness control</string>
     <string name="status_bar_toggle_brightness_summary">Adjust brightness by sliding across the status bar</string>
 
+    <!-- Heads up -->
+    <string name="headsup_section_header">Heads up notifications</string>
+    <string name="heads_up_notifications">Heads up</string>
+    <string name="summary_heads_up_enabled">Pop-up notifications are enabled</string>
+    <string name="summary_heads_up_disabled">Pop-up notifications are disabled</string>
+
     <!-- OmniSwitch Recents -->
     <string name="aosp_recents_title">AOSP recents</string>
     <string name="omniswitch_recents_title">OmniSwitch recents</string>
