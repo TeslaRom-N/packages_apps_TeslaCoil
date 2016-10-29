@@ -20,6 +20,7 @@
     <string name="button_settings">Button Settings</string>
     <string name="quicksettings_category">Schnelleinstellungen</string>
     <string name="traffic_category">Traffic Indicator</string>
+    <string name="statusbar_notifications_category">Benachrichtigungen</string>
 
     <!-- Dialog -->
     <string name="teslacoil_dialog_title">Demnächst!!</string>
@@ -33,6 +34,10 @@
     <string name="advanced_reboot_disabled">deaktivieren</string>
     <string name="advanced_reboot_hide_on_keyguard">Ausblenden auf dem Sperrbildschirm</string>
     <string name="advanced_reboot_show_always">immer anzeigen</string>
+
+    <string name="powermenu_category">Power Menü</string>
+    <string name="powermenu_settings">Einstellungen</string>
+    <string name="powermenu_lockdown">Gerät sperren</string>
 
     <!-- Volume Key Rotation -->
     <string name="swap_volume_buttons_title">neu ausrichten</string>
@@ -166,7 +171,215 @@
     <string name="qs_rows_title">Zeilen</string>
     <string name="qs_columns_title">Spalten</string>
 
-    <!-- Navbar toggle -->
-    <string name="navigation_bar_visible_summary">Navbar aktivieren oder deaktivieren</string>
+    <!-- Battery styles -->
+    <string name="battery_title">Batterie</string>
+    <string name="statusbar_battery_summary">Anzeige der Batterie</string>
+    <string name="battery_style_title">Stil</string>
+    <string name="battery_percent_title">Prozent anzeigen</string>
+    <string name="battery_percent_none">Niemals</string>
+    <string name="battery_percent_always">Immer</string>
+    <string name="battery_percent_expanded">Erweitert</string>
+    <string name="statusbar_percent_inside_title">Prozentüberlappung</string>
+    <string name="statusbar_percent_inside_summary">Prozent auf Batteriebild anzeigen</string>
+    <string name="statusbar_charging_image_title">Ladeanzeige</string>
+    <string name="statusbar_category_charging_title">Laden</string>
+    <string name="statusbar_charging_image_summary">Anzeige während des Ladevorgangs. Verbirgt Prozent-Overlay</string>
+    <string name="statusbar_battery_charging_color_title">Farbe</string>
+    <string name="statusbar_battery_charging_color_enable_title">Farbe beim Laden</string>
+    <string name="battery_enable_title">Batterie anzeigen</string>
+
+    <!-- Navigation Bar -->
+    <string name="navbar_interface_title">Schnittstelle</string>
+    <string name="navbar_size">Bar Größe</string>
+    <string name="navbar_mode">Navigationsmodus</string>
+    <string name="navbar_visibility">Aktivieren Sie die Navigationsleiste</string>
+    <string name="navigationbar_settings_title">Navigation Bar</string>
+    <string name="navigationbar_settings_summary">Passen Sie Navigationsstil und -verhalten an</string>
+    <string name="navbar_general_title">Erweitert</string>
+    <string name="navigation_bar_left_title">Linkshändiger Modus</string>
+    <string name="navigation_bar_left_summary">Legen Sie die Navigationsleiste auf der linken Seite des Bildschirms im Querformat</string>
+    <string name="info_pref_note_title">Hinweis</string>
+    <string name="icon_pack_picker_dialog_title">Icon Packs</string>
+    <string name="invalid_icon_from_uri">Bild kann vom Inhaltsanbieter nicht geladen werden</string>
+    <string name="picker_activities">Activitäten</string>
+    <string name="select_custom_app_title">App auswählen</string>
+    <string name="select_custom_activity_title">Activitäten auswählen</string>
+    <string name="profile_applist_title">Anwendungen</string>
+    <string name="default_string">Standard</string>
+    <string name="reset">Zurücksetzen</string>
+
+    <!-- Actions dialog and default task values set in ActionPreference xml-->
+    <string name="choose_action_title">Aktion auswälen</string>
+    <string name="action_entry_default_action">Standard Einstellungen</string>
+    <string name="action_entry_select_app">Anwendung auswählen</string>
+    <string name="action_entry_custom_action">Wählen Sie eine benutzerdefinierte Aktion aus</string>
+
+    <!-- Fling -->
+    <string name="fling_settings">Fling Einstellungen</string>
+    <string name="fling_enable_title">Fling aktivieren</string>
+    <string name="fling_back_home_policy">Back und Home müssen immer gesetzt sein. Um eine Back- oder Home-Zuweisung zu ändern, setzen Sie zuerst die gewünschte Zuweisung</string>
+    <string name="fling_split_bar_policy">Wenn nur eine Rechts- oder Links-Aktion zugeordnet ist, gilt die Aktion für den gesamten Balken</string>
+    <string name="fling_def_summary">Keine Action gesetzt</string>
+    <string name="fling_swipe_actions">Swipe Gesten</string>
+    <string name="fling_tap_actions">Tap Gesten</string>
+    <string name="fling_short_swipe_right">Rechts kurz wischen</string>
+    <string name="fling_short_swipe_left">Links kurz wischen</string>
+    <string name="fling_long_swipe_right">Rechts lang wischen</string>
+    <string name="fling_long_swipe_left">Links lang wischen</string>
+    <string name="fling_right_up_swipe">Rechte Seite nach oben wischen</string>
+    <string name="fling_left_up_swipe">Linke Seite nach oben wischen</string>
+    <string name="fling_single_tap">Einzel tippen rechts</string>
+    <string name="fling_double_tap">Doppel tippen rechts</string>
+    <string name="fling_long_press">Lang drücken rechts</string>
+    <string name="fling_single_left_tap">Einzel tippen links</string>
+    <string name="fling_double_left_tap">Doppel tippen links</string>
+    <string name="fling_long_left_press">Lang drücken links</string>
+    <string name="portrait_right_swipe_title">Portrait rechts wischen</string>
+    <string name="portrait_left_swipe_title">Portrait links wischen</string>
+    <string name="landscape_right_swipe_title">Landscape rechts wischen</string>
+    <string name="landscape_left_swipe_title">Landscape links wischen</string>
+    <string name="vertical_up_swipe_title">Vertikal nach oben wischen</string>
+    <string name="vertical_down_swipe_title">Vertikal nach unten wischen</string>
+    <string name="up_swipe_title">nach oben wischen</string>
+    <string name="down_swipe_title">nach unten wischen</string>
+    <string name="long_swipe_reset">Zurücksetzen</string>
+    <string name="fling_advanced">Erweitert</string>
+    <string name="fling_long_swipe_title">Lang wischen Schwellen</string>
+    <string name="fling_long_swipe_summary">Feinabstimmung lang wischen Schwellen basierend auf einem Prozentsatz der Fling-Schnittstelle Breite oder Höhe</string>
+    <string name="fling_trails_enable_title">Gestenpfade aktivieren</string>
+    <string name="fling_trails_enable_summary">Zeigen Sie eine Spur auf wisch Gesten</string>
+    <string name="fling_trails_color_title">Pfad Farbe</string>
+    <string name="fling_trails_width_title">Pfad Breite</string>
+    <string name="fling_appearance">Aussehen</string>
+    <string name="fling_show_logo_title">Fling Logo anzeigen</string>
+    <string name="fling_animate_logo_title">Animiertes Logo</string>
+    <string name="fling_animate_logo_summary">Logoanimation bei Berührung</string>
+    <string name="fling_logo_color">Logo Farbe</string>
+    <string name="fling_logo_custom_logo_pick_title">Benutzerdefinierte Logo-Symbol</string>
+    <string name="fling_logo_custom_logo_image_pick_title">Benutzerdefinierte Logo-Bild</string>
+    <string name="fling_logo_custom_logo_reset_title">Logo Symbol zurücksetzen</string>
+    <string name="fling_show_ripple_title">Ripple anzeigen</string>
+    <string name="fling_show_ripple_summary">Ripple Effekt bei Berührung</string>
+    <string name="fling_ripple_color">Ripple Farbe</string>
+    <string name="fling_longpress_timeout_label_left">Weniger Verzögerung</string>
+    <string name="fling_longpress_timeout_label_right">Mehr Verzögerung</string>
+    <string name="fling_longpress_title">Lange Druckverzögerung</string>
+    <string name="fling_longpress_summary">Erhöhen oder Verringern der Zeit, die benötigt wird, um eine lange Betätigung auszuführen</string>
+
+    <!-- Pulse navigation bar music visualizer -->
+    <string name="pulse_help_policy_notice_title">Über Pulse</string>
+    <string name="pulse_help_policy_notice_summary">Pulse ist ein brillanter Audio-Grafik-Equalizer auf der Navigationsleiste, wenn Musik abgespielt wird. Puls funktioniert nicht mit einigen Audioquellen, wenn Sie Gerätelautsprecher hören</string>
+    <string name="pulse_settings_summary">Navigationsleiste Audio-Grafik-Equalizer</string>
+    <string name="fling_show_pulse_title">Puls anzeigen</string>
+    <string name="fling_show_pulse_summary">Audio-Grafik-Equalizer auf der Navigationsleiste</string>
+    <string name="pulse_render_mode_title">Render Modus</string>
+    <string name="pulse_render_mode_fading_bars">Fading Blöcke</string>
+    <string name="pulse_render_mode_solid_lines">Durchgezogene Linien</string>
+    <string name="fling_pulse_color">Pulse Farbe</string>
+    <string name="eos_fling_lavalamp_title">Schalten Sie die Lavalampe ein</string>
+    <string name="eos_fling_lavalamp_summary">Pulse animiert eine glatte Lavalampe Stil Farbmischung</string>
+    <string name="pulse_advanced_category">Erweitert</string>
+    <string name="pulse_legacy_mode_advanced_category">Fading Blöcke Modus Einstellungen</string>
+    <string name="pulse_custom_fudge_factor">Sanity Level</string>
+    <string name="lavamp_solid_speed_title">Lava Lamp Geschwindigkeit</string>
+    <string name="pulse_solid_dimen_category">Feste Linien Modus Einstellungen</string>
+
+    <!-- Pulse config -->
+    <string name="pulse_custom_dimen">Bar Breite</string>
+    <string name="pulse_custom_div">Bar Abstand</string>
+    <string name="pulse_filled_block_size">Block Größe</string>
+    <string name="pulse_empty_block_size">Block Abstand</string>
+
+    <!-- Navbar height -->
+    <string name="navigation_bar_size_title">Bar Größe</string>
+    <string name="portrait_title">Portrait Höhe</string>
+    <string name="land_vert_title">Landscape Breite</string>
+    <string name="land_hor_title">Landscape Höhe</string>
+    <string name="positive_done">erledigt</string>
+
+    <!-- SmartBar -->
+    <string name="smartbar_settings_title">Smartbar Einstellungen</string>
+    <string name="smartbar_editor_title">Toggle Button Editor</string>
+    <string name="smartbar_editor_summary">Medium drücken und ziehen, um die Position zu ändern. Drücken Sie lange, um das Bearbeitungsmenü anzuzeigen. Die Tastenposition kann geändert werden, während das Menü angezeigt wird.</string>
+    <string name="smartbar_context_menu_position_title">Kontexttasten Layoutposition</string>
+    <string name="smartbar_context_menu_position_summary">Stellen Sie die Position der Kontexttasten wie Menü und IME Wähler ein</string>
+    <string name="smartbar_right">Rechts</string>
+    <string name="smartbar_left">Links</string>
+    <string name="smartbar_button_animation_title">Button touch Animation</string>
+    <string name="smartbar_button_animation_summary">Legen Sie den Animationsstil der primären Schaltflächen fest, wenn Sie gedrückt werden</string>
+    <string name="smartbar_button_animation_spring">Springen</string>
+    <string name="smartbar_factory_reset_title">Auf Stock zurücksetzen</string>
+    <string name="smartbar_factory_reset_confirm">Sind Sie sicher, dass Sie Smart Bar auf Stock zurücksetzen möchten?</string>
+    <string name="smartbar_ime_action_title">Eingabemethodenaktionen</string>
+    <string name="smartbar_ime_action_summary">Legen Sie fest, welche Schaltflächen angezeigt werden sollen, wenn eine Bildschirmtastatur angezeigt wird</string>
+    <string name="smartbar_ime_action_none">Keine</string>
+    <string name="smartbar_ime_action_arrows">Eingabepfeile</string>
+    <string name="smartbar_ime_action_switcher">Keyboard Wechsler</string>
+    <string name="smartbar_backup_current_config_title">Profil speichern</string>
+    <string name="smartbar_restore_config_title">Profil wiederherstellen</string>
+    <string name="smartbar_config_name_edit_dialog_title">Smartbar Profile Name</string>
+    <string name="smartbar_config_name_edit_dialog_message">Geben Sie den Namen ein oder lassen Sie ihn leer</string>
+    <string name="smartbar_config_dialog_title">Smartbar Profile</string>
+    <string name="smartbar_config_backup_success_toast">Smartbar Profile erfolgreich gespeichert</string>
+    <string name="smartbar_config_restore_success_toast">Smartbar Profile erfolgreich wiederhergestellt</string>
+    <string name="smartbar_config_backup_error_toast">Fehler beim speichern des Smartbar Profiles</string>
+    <string name="smartbar_config_restore_error_toast">Fehler beim wiederherstellen des Smartbar Profiles</string>
+    <string name="navbar_buttons_alpha_title">Button Transparenz</string>
+
+    <!-- Color Picker -->
+    <string name="dialog_color_picker">Farb Picker</string>
+    <string name="press_color_to_apply">Drücken Sie auf die Farbe um sie auszuwählen</string>
+    <string name="set">Einstellen</string>
+    <string name="color_default">Standard</string>
+
+    <!-- Weather in status bar -->
+    <string name="status_bar_show_weather_title">Wetter anzeigen</string>
+    <string name="status_bar_show_weather_summary">Wetter im Statusbar Header anzeigen</string>
+
+    <!-- Lockscreen weather -->
+    <string name="lockscreen_weather_title">Wetter</string>
+    <string name="lock_screen_weather_settings_title">Wetter Options</string>
+    <string name="weather_cat_notifications_title">Benachrichtigungen</string>
+    <string name="weather_show_weather_title">Wetter anzeigen</string>
+    <string name="weather_show_weather_summary">Wetter auf Sperrbildschirm anzeigen</string>
+    <string name="weather_show_location_title">Ort anzeigen</string>
+    <string name="weather_show_location_summary">Aktivieren, um den Ort anzuzeigen</string>
+    <string name="weather_show_timestamp_title">Zeitstempel anzeigen</string>
+    <string name="weather_show_location_summary">Display Wetterlage</string>
+    <string name="weather_condition_icon_title">Bedingung Symbol</string>
+    <string name="weather_condition_icon_dlg_title">Wählen Sie ein Symbol für die Anzeige der Wetterbedingungen</string>
+    <string name="weather_condition_icon_colored_title">Farbig</string>
+    <string name="icons_title">Symbole</string>
+    <string name="position_right_title">Rechts</string>
+    <string name="position_centered_title">Mittig</string>
+    <string name="hidden_title">ausblenden</string>
+    <string name="weather_hide_panel_title">Ausblenden Wetter-Panel</string>
+    <string name="weather_hide_panel_dlg_title">Wählen Sie, wann das Wetterfenster ausgeblendet werden soll</string>
+    <string name="weather_hide_panel_auto_title">Automatisch</string>
+    <string name="weather_hide_panel_custom_title">Benutzerdefiniert</string>
+    <string name="weather_hide_panel_never_title">Niemals</string>
+    <string name="weather_hide_panel_auto_summary">Das Wetterfenster wird ausgeblendet, wenn die sichtbaren Benachrichtigungen die maximal zulässigen Benachrichtigungen auf dem Sperrbildschirm erreichen</string>
+    <string name="weather_hide_panel_custom_summary">Das Wetterfenster wird ausgeblendet, wenn die sichtbaren Benachrichtigungen die gewählte Anzahl von Benachrichtigungen erreichen</string>
+    <string name="weather_hide_panel_never_summary">Das Wetterfenster wird nicht ausgeblendet</string>
+    <string name="weather_number_of_notifications_title">Anzahl der Mitteilungen</string>
+    <string name="weather_settings_options_title">Standorteinstellungen</string>
+    <string name="weather_settings_summary">Wählen Sie den Standort und andere Einstellungen</string>
+
+    <!-- lock screen visualizer -->
+    <string name="lockscreen_visualizer_title">Musikvisualisierung anzeigen</string>
+
+    <!-- Power menu Animations  -->
+    <string name="power_menu_animation_title">Power Menü Animation</string>
+    <string name="power_menu_animation_summary">Ändern Sie die An / Aus-Animation des Power-Menüs</string>
+    <string name="power_menu_animation_dialog_title">Wählen Sie Power-Menü Animation</string>
+    <string name="power_menu_animation_aosp">AOSP (Standard)</string>
+    <string name="power_menu_animation_bottom">von unten</string>
+    <string name="power_menu_animation_top">von oben</string>
+
+    <!-- Heads up -->
+    <string name="headsup_section_header">Heads Up Benachrichtigungen</string>
+    <string name="heads_up_notifications">Heads Up</string>
+    <string name="summary_heads_up_enabled">Pop-up-Benachrichtigungen sind aktiviert</string>
+    <string name="summary_heads_up_disabled">Pop-up-Benachrichtigungen sind deaktiviert</string>
 
 </resources>
