@@ -29,6 +29,8 @@
     <string name="traffic_category">Traffic indicators</string>
     <string name="statusbar_notifications_category">Notifications</string>
 
+    <string name="teslacoil_summary_title">Customize your device</string>
+
     <!-- Dialog -->
     <string name="teslacoil_dialog_title">Coming Soon!!</string>
     <string name="teslacoil_dialog_message">Under Construction</string>
