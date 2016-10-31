@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--  Copyright (C) 2014-2016 The Dirty Unicorns Project
+<!--  Copyright (C) 2016 Ground Zero Roms
 
   This program is free software: you can redistribute it and/or modify
   it under the terms of the GNU General Public License as published by
@@ -20,11 +20,14 @@
     android:title="@string/lockscreen_category"
     android:layout="@layout/tab"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
-  
-        <com.gzr.teslacoil.preference.SecureSettingSwitchPreference
-            android:key="lockscreen_visualizer"
-            android:title="@string/lockscreen_visualizer_title"
-            android:defaultValue="true"/>
+
+         <PreferenceScreen
+              android:title="@string/lockscreen_targets_title"
+              android:layout="@layout/preference_lockscreen_shortcuts" >
+              <intent
+                  android:targetPackage="com.android.systemui"
+                  android:targetClass="com.android.systemui.tesla.LockscreenShortcutsActivity" />
+         </PreferenceScreen>
 
         <PreferenceScreen
             android:key="lockscreen_weather"
@@ -32,6 +35,11 @@
             android:fragment="com.gzr.teslacoil.fragments.LockScreenWeatherSettings"
             android:layout="@layout/preference_weather" 
             />
+
+       <com.gzr.teslacoil.preference.SecureSettingSwitchPreference
+            android:key="lockscreen_visualizer"
+            android:title="@string/lockscreen_visualizer_title"
+            android:defaultValue="true"/>
 
 </PreferenceScreen>
 
