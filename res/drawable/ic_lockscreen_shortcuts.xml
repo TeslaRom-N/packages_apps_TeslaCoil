@@ -1,6 +1,6 @@
 <!--
-Copyright (C) 2014 The Android Open Source Project
-   Licensed under the Apache License, Version 2.0 (the "License");
+    Copyright (C) 2016 Ground Zero Roms
+    Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
     You may obtain a copy of the License at
          http://www.apache.org/licenses/LICENSE-2.0
@@ -14,9 +14,9 @@ Copyright (C) 2014 The Android Open Source Project
         android:width="24dp"
         android:height="24dp"
         android:viewportWidth="24"
-        android:viewportHeight="24"
-        android:tint="?android:attr/colorControlNormal">
+        android:viewportHeight="24">
+
     <path
-        android:pathData="M12,17A2,2 0 0,0 14,15C14,13.89 13.1,13 12,13A2,2 0 0,0 10,15A2,2 0 0,0 12,17M18,8A2,2 0 0,1 20,10V20A2,2 0 0,1 18,22H6A2,2 0 0,1 4,20V10C4,8.89 4.9,8 6,8H7V6A5,5 0 0,1 12,1A5,5 0 0,1 17,6V8H18M12,3A3,3 0 0,0 9,6V8H15V6A3,3 0 0,0 12,3Z"
-        android:fillColor="@color/white"/>
+        android:fillColor="?android:attr/colorAccent"
+        android:pathData="M274.765 141.3l0 -47.095C274.765 42.172 232.583 0 180.559 0 128.527 0 86.354 42.172 86.354 94.205l0 47.095c-17.34 0 -31.4 14.06 -31.4 31.4l0 157.016c0 17.344 14.06 31.402 31.4 31.402l188.411 0c17.341 0 31.398 -14.059 31.398 -31.402l0 -157.016c0.001 -17.34 -14.057 -31.4 -31.398 -31.4zM117.756 94.205c0 -34.69 28.12 -62.803 62.803 -62.803 34.685 0 62.805 28.112 62.805 62.803l0 47.095 -125.608 0 0 -47.095zm157.009 235.51l-188.411 0 0 -157.007 188.411 0 0 157.007zm-109.907 -67.157l0 20.054c0 8.664 7.035 15.701 15.701 15.701 8.664 0 15.701 -7.037 15.701 -15.701l0 -20.054c9.337 -5.441 15.701 -15.456 15.701 -27.046 0 -17.348 -14.062 -31.41 -31.402 -31.41 -17.34 0 -31.4 14.062 -31.4 31.41 0 11.59 6.358 21.605 15.699 27.046z" />
 </vector>
