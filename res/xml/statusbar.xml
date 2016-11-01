@@ -54,6 +54,7 @@
      <PreferenceScreen
         android:key="carrier_label_settings"
         android:fragment="com.gzr.teslacoil.fragments.CarrierLabelSettings"
+        android:layout="@layout/preference_carrier_label"
         android:title="@string/carrier_label_settings_title" />
 
 </PreferenceScreen>
