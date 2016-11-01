@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  Copyright (C) 2014-2016 Tesla
+
+  This program is free software: you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version
+
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+
+  You should have received a copy of the GNU General Public License
+  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ -->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- Abas -->
+    <string name="system_category">Sistema</string>
+    <string name="lockscreen_category">Tela de bloqueio</string>
+    <string name="statusbar_category">Barra de status</string>
+    <string name="navigation_category">Navegação</string>
+    <string name="multitasking_category">Multitarefa</string>
+    <string name="weather_cat_lockscreen">Tela de bloqueio</string>
+
+    <string name="button_settings">Configurações dos botões</string>
+    <string name="quicksettings_category">Configurações rápidas</string>
+    <string name="traffic_category">Indicadores de tráfego</string>
+    <string name="statusbar_notifications_category">Notificações</string>
+
+    <!-- Dialogos -->
+    <string name="teslacoil_dialog_title">Em breve!!</string>
+    <string name="teslacoil_dialog_message">Em construção</string>
+    <string name="teslacoil_dialog_toast">LEIA!</string>
+
+    <!-- Menu de energia -->
+    <string name="powermenu_category">Menu de energia</string>
+    <string name="powermenu_screenshot">Captura de tela</string>
+    <string name="powermenu_power">Desligar</string>
+    <string name="powermenu_reboot">Reiniciar</string>
+    <string name="powermenu_airplane">Modo avião</string>
+    <string name="powermenu_settings">configurações</string>
+    <string name="powermenu_soundpanel">Painel de som</string>
+
+    <!-- Opção de reinicialização avançada -->
+    <string name="advanced_reboot_title">Reinicialização avançada</string>
+    <string name="advanced_reboot_summary">Incluem opções no menu de energia para reiniciar em recuperação e bootloader</string>
+    <string name="advanced_reboot_dialog_title">Menu de reinicialização avançada</string>
+    <string name="advanced_reboot_disabled">Desativar</string>
+    <string name="advanced_reboot_hide_on_keyguard">Esconder na tela de bloqueio</string>
+    <string name="advanced_reboot_show_always">Mostrar sempre</string>
+
+    <!-- Rotação da chave de volume -->
+    <string name="swap_volume_buttons_title">Reorientar</string>
+    <string name="swap_volume_buttons_summary">botões de volume serão ajustados quando a tela for girada</string>
+
+    <!-- Volume de despertar -->
+    <string name="volume_rocker_wake_title">Volume de despertar</string>
+    <string name="volume_rocker_wake_summary">Pressionando as teclas de volume irá acordar seu dispositivo</string>
+
+    <!-- Controle de volume de música -->
+    <string name="volume_rocker_music_controls_title">Controle de reprodução</string>
+    <string name="volume_rocker_music_controls_summary">Quando a tela estiver desligada, ao pressionar logamente as teclas de volume irá procurar faixas de música</string>
+
+    <!-- Teclas  de volume controlam o fluxo de mídia -->
+    <string name="volume_keys_control_media_stream_title">As teclas de volume controlam o volume de mídia</string>
+    <string name="volume_keys_control_media_stream_summary">Forçar teclas de volume para controlar fluxo de mídia</string>
+
+    <!-- Barra de status | Relógio -->
+    <string name="status_bar_clock_title">Configurações do relógio</string>
+    <string name="status_bar_clock_style_title">Estilo do relógio</string>
+    <string name="status_bar_clock_style_right">Direita</string>
+    <string name="status_bar_clock_style_left">Esquerda</string>
+    <string name="status_bar_clock_style_center">Centro</string>
+    <string name="status_bar_clock_style_hidden">Escondido</string>
+    <string name="status_bar_am_pm_title">Estilo AM/PM</string>
+    <string name="status_bar_am_pm_info">Modo 24- horas do relógio está ativado</string>
+    <string name="status_bar_am_pm_small">Pequeno</string>
+    <string name="status_bar_am_pm_hidden">Escondido (padrão)</string>
+    <string name="clock_date_display">Data</string>
+    <string name="clock_date_display_summary">Exibição de data personalizada antes do relógio</string>
+    <string name="clock_date_display_none">Não mostrar</string>
+    <string name="clock_date_display_small">Tamanho da fonte pequena</string>
+    <string name="clock_date_display_normal">Tamanho da fonte normal</string>
+    <string name="clock_date_style">Estilo da data</string>
+    <string name="clock_date_style_lowercase">Minúsculas</string>
+    <string name="clock_date_style_uppercase">Maiúsculas</string>
+    <string name="clock_date_format_custom">Formato java personalizado</string>
+    <string name="clock_date_format">Formato da data</string>
+    <string name="clock_date_string_edittext_title">Deve estar em formato de data por exemplo,. MM/dd/yy</string>
+
+    <!-- Estillo de animação das telhas  -->
+    <string name="quicksettings_tiles_category">Opções de animação das telhas</string>
+    <string name="qs_tile_animation_style_title">Estilo de animação telhas</string>
+    <string name="qs_tile_animation_duration_title">Duração da animação telhas</string>
+    <string name="qs_tile_animation_interpolator_title">Animação do interpolador de telhas</string>
+    <string name="qs_tile_animation_style_off">Sem animaçãon</string>
+    <string name="qs_tile_animation_style_flip">Giro</string>
+    <string name="qs_tile_animation_style_rotate">Rodar</string>
+    <string name="qs_tile_animation_duration_low">Baixo</string>
+    <string name="qs_tile_animation_duration_default">Padrão</string>
+    <string name="qs_tile_animation_duration_fast">Rápido</string>
+    <string name="qs_tile_animation_interpolator_decelerateInterpolator">Desacelerar</string>
+    <string name="qs_tile_animation_interpolator_accelerateDecelerateInterpolator">Acelerar desacelerar</string>
+    <string name="qs_tile_animation_interpolator_bounceInterpolator">Pular</string>
+    <string name="qs_tile_animation_interpolator_overshootInterpolator">Ultrapassar</string>
+    <string name="qs_tile_animation_interpolator_anticipateInterpolator">Antecipar</string>
+    <string name="qs_tile_animation_interpolator_anticipateOvershootInterpolator">Antecipar e ultrapassar</string>
+
+    <!-- Puxar rápido para baixo -->
+    <string name="quick_pulldown_title">Puxar rápido para baixo</string>
+    <string name="quick_pulldown_summary">%1$s borda da barra de status são puxadas para baixo das configurações rápidas</string>
+    <string name="quick_pulldown_summary_always">Sempre mostrar configurações rápidas suspenso na barra de status</string>
+    <string name="quick_pulldown_off">Desligado</string>
+    <string name="quick_pulldown_left">Esquerda</string>
+    <string name="quick_pulldown_right">Direita</string>
+    <string name="quick_pulldown_always">Sempre</string>
+
+    <!-- Tráfego de rede -->
+    <string name="network_traffic_title">Tráfego de rede</string>
+    <string name="show_network_traffic_state">monitor de tráfego barra de status</string>
+    <string name="show_network_traffic_unit">Unidade de exibição</string>
+    <string name="show_network_traffic_frequency">Intervalo de atualização</string>
+    <string name="show_network_traffic_disable">Desativado</string>
+    <string name="show_network_traffic_up">Enviando</string>
+    <string name="show_network_traffic_down">Recendo</string>
+    <string name="show_network_traffic_all">Enviando e recebendo</string>
+    <string name="show_network_traffic_bit">Bits por segundo</string>
+    <string name="show_network_traffic_byte">Bytes por segundo</string>
+    <string name="network_traffic_autohide">Ocultar automaticamente</string>
+    <string name="network_traffic_autohide_summary">Ocultar o monitor de tráfego, quando não tiver nenhuma atividade</string>
+    <string name="network_traffic_autohide_threshold">Limite de inatividade</string>
+    <string name="network_traffic_hidearrow">Esconder setas</string>
+    <string name="network_traffic_hidearrow_summary">Esconder as setas nos indicadores de tráfego</string>
+
+    <!-- Dados de telha avançada -->
+    <string name="qs_advanced_data_title"> Dados de telha avançada</string>
+    <string name="qs_advanced_data_summary">Enable one tap action to enable or disable data</string>
+
+    <!-- Alternância de Wifi -->
+    <string name="qs_wifi_easy_toggle_title">Alternância fácil de WIFI</string>
+    <string name="qs_wifi_easy_toggle_summary">Um clique vai fazer com que o WiFi ligue ou desligue em vez de levá-lo para as configurações</string>
+
+    <!-- Configurações rápidas da barra de brilho -->
+    <string name="qs_brightness_slider_title">Barra de brilho</string>
+    <string name="qs_brightness_slider_summary">Mostram uma barra de brilho no painel de configurações rápida</string>
+    <string name="brightness_icon_title">Ícone de brilho </string>
+    <string name="brightness_icon_summary">Mostrar um ícone de brilho a esquerda da barra de brilho para ajustar o brilho automático</string>
+
+    <!-- Sintonizador da barra de navegação -->
+    <string name="navbar_tuner_title">Sintonizador da barra de navegação</string>
+
+    <!-- Chaves de hardware -->
+    <string name="key_settings_title">Chaves de hardware</string>
+    <string name="hardware_keys_home_key_title">Botão inicio</string>
+    <string name="hardware_keys_menu_key_title">Botão de menu</string>
+    <string name="hardware_keys_short_press_title">Ação ao pressionar brevemente</string>
+    <string name="hardware_keys_long_press_title">Ação ao pressionar logamente</string>
+    <string name="hardware_keys_double_tap_title">Ação ao tocar duas vezes</string>
+    <string name="hardware_keys_action_nothing">Sem ação</string>
+    <string name="hardware_keys_action_menu">Abrir/fechar menu</string>
+    <string name="hardware_keys_action_app_switch">Interruptor de aplicativos recentes</string>
+    <string name="hardware_keys_action_search">Assistente de pesquisa</string>
+    <string name="hardware_keys_action_voice_search">Pesquisa por voz</string>
+    <string name="hardware_keys_action_in_app_search">Procurar no aplicativo</string>
+    <string name="hardware_keys_action_launch_camera">Lançamento da câmera</string>
+    <string name="hardware_keys_action_sleep">Virar tela para desligar</string>
+
+    <!-- Contador de notificações na barra de status -->
+    <string name="status_bar_notif_count_title">SMostrar o número de notificações</string>
+    <string name="status_bar_notif_count_summary">Exibir o número de notificações pendentes</string>
+
+    <!-- Forçar notifcações expandidas-->
+    <string name="force_expanded_notifications_title">Force Expanded Notifications</string>
+    <string name="force_expanded_notifications_summary">Available only for apps that support expanded notifications</string>
+
+    <!-- Desativar as mensagens de modo imersivos -->
+    <string name="disable_immersive_message_title">Desativar o modo de mensagens imersivas</string>
+    <string name="disable_immersive_message_summary">Isto irá esconder todas as mensagens de modo imersivo</string>
+
+    <!-- Área de trabalho expandida -->
+    <string name="expanded_desktop_category">Área de trabalho expandida</string>
+    <string name="expanded_hide_nothing">Não esconder nada</string>
+    <string name="expanded_hide_status">Ocultar barra de status</string>
+    <string name="expanded_hide_navigation">Ocultar barra de navegação</string>
+    <string name="expanded_hide_both">Ocultar ambos</string>
+    <string name="expanded_nothing_to_show">Para adicionar uma configuração por aplicativo personalizado para o estado expandido, defina "Habilitado para todos" para a posição desligado</string>
+    <string name="expanded_desktop_state">Estado expandido</string>
+    <string name="expanded_enabled_for_all">Ativado para todos</string>
+    <string name="expanded_user_configurable">Configurável pelo usuário</string>
+
+    <!-- Configurações de definições rápidas -->
+    <string name="status_bar_expanded_qs_settings">Design</string>
+    <string name="status_bar_expanded_qs_settings_summary">Escolha o número de linhas e colunas</string>
+    <string name="qs_cat_portrait_title">Retrato</string>
+    <string name="qs_cat_landscape_title">Paisagem</string>
+    <string name="qs_rows_title">Fileiras</string>
+    <string name="qs_columns_title">Colunas</string>
+
+    <!-- Estilos da bateria -->
+    <string name="battery_title">Bateria</string>
+    <string name="statusbar_battery_summary">Definir estilo de exibição da bateria na barra de status</string>
+    <string name="battery_style_title">Estilo</string>
+    <string name="battery_percent_title">Mostrar porcentagemt</string>
+    <string name="battery_percent_none">Nunca</string>
+    <string name="battery_percent_always">Sempre</string>
+    <string name="battery_percent_expanded">Expandido</string>
+    <string name="statusbar_percent_inside_title">Percent overlay</string>
+    <string name="statusbar_percent_inside_summary">Mostrar porcentagem em cima da imagem da bateria</string>
+    <string name="statusbar_charging_image_title">Indicador de carregamento</string>
+    <string name="statusbar_category_charging_title">Carregando</string>
+    <string name="statusbar_charging_image_summary">Mostra o indicador de raio durante o carregamento. Esconde a pocentagem</string>
+    <string name="statusbar_battery_charging_color_title">Cor</string>
+    <string name="statusbar_battery_charging_color_enable_title">Cor durante o carregamento</string>
+    <string name="statusbar_battery_charging_color_enable_summary"></string>
+    <string name="battery_enable_title">Mostrar bateria</string>
+
+    <!-- Barra de navegação -->
+    <string name="navbar_size">Tamanho da barra</string>
+    <string name="navbar_mode">Modo de navegaçãi</string>
+    <string name="navbar_visibility">Ativar barra de navegação</string>
+    <string name="navigationbar_settings_title">Barra de navegação</string>
+    <string name="navigationbar_settings_summary">Personalizar o estilo de navegação e de comportamento</string>
+    <string name="navbar_general_title">Avançado</string>
+    <string name="navigation_bar_left_title">Modo canhoto</string>
+    <string name="navigation_bar_left_summary">Coloque a barra de navegação no lado esquerdo da tela no modo paisagem</string>
+    <string name="info_pref_note_title">Nota</string>
+    <string name="smartbar_interface">Barra de navegação inteligente</string>
+    <string name="icon_pack_picker_dialog_title">Pacote de ícones</string>
+    <string name="invalid_icon_from_uri">Não é possível carregar a imagem do provedor de conteúdo</string>
+    <string name="picker_activities">Atividades</string>
+    <string name="select_custom_app_title">Selecione aplicativo personalizado</string>
+    <string name="select_custom_activity_title">Selecione a atividade personalizada</string>
+    <string name="profile_applist_title">Aplicativos</string>
+    <string name="default_string">Padrão</string>
+    <string name="reset">Repor</string>
+
+    <!-- Caixa de diálogo de ações e valores de tarefa padrão definidos em Preferência de ação xml-->
+    <string name="choose_action_title">Escolher ação</string>
+    <string name="action_entry_default_action">Configurações padrão</string>
+    <string name="action_entry_select_app">Selecionar aplicativo</string>
+    <string name="action_entry_custom_action">Selecionar ação personalizada</string>
+
+    <!-- Fling -->
+    <string name="fling_settings">Configurações Fling</string>
+    <string name="fling_enable_title">Ativar fling</string>
+    <string name="fling_back_home_policy">Voltar ao nício é obrigatório  para ser definido em todos os momentos. Para alterar uma atribuição Voltar ou Inico, defina primeiro a atribuição desejada</string>
+    <string name="fling_split_bar_policy">Quando apenas o direito ou uma ação esquerda é atribuído, a ação se aplica a barra completamente</string>
+    <string name="fling_def_summary">Nehuma ação definida</string>
+    <string name="fling_swipe_actions">Gestos Swipe</string>
+    <string name="fling_tap_actions">Toque em gestos</string>
+    <string name="fling_short_swipe_right">Deslize curto no lado direito</string>
+    <string name="fling_short_swipe_left">Deslize curto no lado esquerdo</string>
+    <string name="fling_long_swipe_right">Deslize longo no lado direito</string>
+    <string name="fling_long_swipe_left">Deslize longo na esquerda</string>
+    <string name="fling_right_up_swipe">Deslizar o lado direito para cima</string>
+    <string name="fling_left_up_swipe">Deslizar o lado esquerdo para cima</string>
+    <string name="fling_single_tap">Toque simples no lado direito</string>
+    <string name="fling_double_tap">Toque duas vezes à direita</string>
+    <string name="fling_long_press">Pressione longamente para a direita</string>
+    <string name="fling_single_left_tap">Toque simples para a esquerda</string>
+    <string name="fling_double_left_tap">Toque duas vezes à esquerda</string>
+    <string name="fling_long_left_press">Pressione longamente para a esquerda</string>
+    <string name="long_swipe_portrait_title">Retrato</string>
+    <string name="long_swipe_landscape_title">Paisagem</string>
+    <string name="portrait_right_swipe_title">Deslize para a direita em modo retrato</string>
+    <string name="portrait_left_swipe_title">Deslize para esquerda em modo retrato </string>
+    <string name="landscape_right_swipe_title">Deslizar  para a direita da paisagem</string>
+    <string name="landscape_left_swipe_title">Deslizar para a esquerda em modo paisagem</string>
+    <string name="vertical_up_swipe_title">Deslizamento vertical para cima</string>
+    <string name="vertical_down_swipe_title">Deslizamento vertical para baixo</string>
+    <string name="up_swipe_title">Deslizar para cima</string>
+    <string name="down_swipe_title">Deslizar para baixo</string>
+    <string name="long_swipe_reset">Resetar</string>
+    <string name="fling_advanced">Avançado</string>
+    <string name="fling_long_swipe_title">Limites de deslize longos</string>
+    <string name="fling_long_swipe_summary">Ajuste fino de limiares longos com base em uma porcentagem de largura ou altura da interface de Fling</string>
+    <string name="fling_trails_enable_title">Ativar trilhas gestuais</string>
+    <string name="fling_trails_enable_summary">Mostrar uma trilha em gestos de deslize</string>
+    <string name="fling_trails_color_title">Cor da trilha</string>
+    <string name="fling_trails_width_title">Largura da trilha</string>
+    <string name="fling_appearance">Aparência</string>
+    <string name="fling_show_logo_title">Mostrar Fling logo</string>
+    <string name="fling_animate_logo_title">Animar o logotipo</string>
+    <string name="fling_animate_logo_summary">Animação de logotipos em eventos de toque</string>
+    <string name="fling_logo_color">Cores do logotipo</string>
+    <string name="fling_logo_custom_logo_pick_title">Ícone do logotipo personalizado</string>
+    <string name="fling_logo_custom_logo_image_pick_title">Imagem do logotipo personalizado</string>
+    <string name="fling_logo_custom_logo_reset_title">Redefinir ícone de logotipo</string>
+    <string name="fling_show_ripple_title">Mostrar ondulação</string>
+    <string name="fling_show_ripple_summary">Efeito de ondulação em eventos de toque</string>
+    <string name="fling_ripple_color">Cor da ondulação</string>
+    <string name="fling_longpress_timeout_label_left">Menos atraso</string>
+    <string name="fling_longpress_timeout_label_right">Mais atraso</string>
+    <string name="fling_longpress_title">atraso ao pressionar longamente</string>
+    <string name="fling_longpress_summary">Aumentar ou diminuir o tempo que leva para executar</string>
+
+    <!-- Visualizador de música pulso -->
+    <string name="pulse_help_policy_notice_title">Sobre pulso</string>
+    <string name="pulse_help_policy_notice_summary">Pulso é um equalizador gráfico de áudio brilhante na barra de navegação quando a música toca. Pulso não funciona com algumas fontes de áudio quando estiver ouvindo no alto-falante do dispositivo</string>
+    <string name="pulse_settings">Pulso</string>
+    <string name="pulse_settings_summary">Equalizador gráfico na barra de navegação</string>
+    <string name="fling_show_pulse_title">Mostrar pulso</string>
+    <string name="fling_show_pulse_summary">Equalizador gráfico de áudio na barra de navegação</string>
+    <string name="pulse_render_mode_title">Modo de renderização</string>
+    <string name="pulse_render_mode_fading_bars">Desaparecendo blocos</string>
+    <string name="pulse_render_mode_solid_lines">Linhas sólidas</string>
+    <string name="fling_pulse_color">Cor do pulso</string>
+    <string name="eos_fling_lavalamp_title">Ligar a lâmpada de lava</string>
+    <string name="eos_fling_lavalamp_summary">Pulso anima uma lâmpada de lava com mistura de cores e um estilo suave</string>
+    <string name="pulse_advanced_category">Avançado</string>
+    <string name="pulse_legacy_mode_advanced_category">Modo de configurações de desaparecimento de blocos</string>
+    <string name="pulse_custom_fudge_factor">Nível de sanidade</string>
+    <string name="lavamp_solid_speed_title">Velocidade da lâmpada de lava</string>
+    <string name="pulse_solid_dimen_category">Modo de configurações de linhas sólidas</string>
+
+    <!--Configuração de pulso -->
+    <string name="pulse_custom_dimen">Largura da barra</string>
+    <string name="pulse_custom_div">Espaçamento barra</string>
+    <string name="pulse_filled_block_size">Tamanho do bloco</string>
+    <string name="pulse_empty_block_size">Espaço do bloco</string>
+
+    <!-- Altura da barra de navegação -->
+    <string name="navigation_bar_size_title">Tamanho da barra</string>
+    <string name="portrait_title">Altura em modo retrato</string>
+    <string name="land_vert_title">Largura em  modo paisagem</string>
+    <string name="land_hor_title">Altura em modo paisagem</string>
+    <string name="positive_done">Feito</string>
+
+    <!-- Barra inteligente -->
+    <string name="smartbar_category">Barra inteligente</string>
+    <string name="smartbar_settings_title">Configurações da barra inteligente</string>
+    <string name="smartbar_editor_title">Editor do botão de alternância</string>
+    <string name="smartbar_editor_summary">Pressione em um nível médio e arraste para mudar de posição. Pressione longamente para mostrar o menu de editar. A posição do botão pode ser alterado enquanto o menu é exibido.</string>
+    <string name="smartbar_context_menu_position_title">Posição dos botões no contexto do layout</string>
+    <string name="smartbar_context_menu_position_summary">Definir a posição dos botões contextuais, como seletor de menu e tempo</string>
+    <string name="smartbar_button_animation_title">Animação de toque do botão</string>
+    <string name="smartbar_button_animation_summary">Defina o estilo de animação dos botões principais quando forem pressionados</string>
+    <string name="smartbar_button_animation_ripple">Ondulação</string>
+    <string name="smartbar_button_animation_spring">Primavera</string>
+    <string name="smartbar_factory_reset_title">Repor para o padrão</string>
+    <string name="smartbar_factory_reset_confirm">Tem certeza de que deseja redefinir  a barra inteligente para as configuração padrão?</string>
+    <string name="smartbar_ime_action_title">Ações de método de entrada</string>
+    <string name="smartbar_ime_action_summary">Definir quais os botões devem ser mostrados quando estiver mostrando um teclado na tela</string>
+    <string name="smartbar_ime_action_none">Nenhum</string>
+    <string name="smartbar_ime_action_arrows">Setas de inserção</string>
+    <string name="smartbar_ime_action_switcher">Interruptor do teclado</string>
+    <string name="smartbar_backup_current_config_title">Salvar perfis</string>
+    <string name="smartbar_restore_config_title">Restaurar perfis</string>
+    <string name="smartbar_config_name_edit_dialog_title">Nome de perfil da barra inteligente</string>
+    <string name="smartbar_config_name_edit_dialog_message">Digite o nome ou deixe em branco</string>
+    <string name="smartbar_config_dialog_title">Perfis da barra inteligente</string>
+    <string name="smartbar_config_backup_success_toast">Perfis da barra inteligente salvos com sucesso</string>
+    <string name="smartbar_config_restore_success_toast">Perfil da barra inteligente restaurado com sucesso</string>
+    <string name="smartbar_config_backup_error_toast">Erro ao salvar perfil da barra inteligente</string>
+    <string name="smartbar_config_restore_error_toast">Erro ao restaurar pefil da barra inteligente</string>
+    <string name="navbar_buttons_alpha_title">Transparência do botão</string>
+
+    <!-- Cor do apanhador -->
+    <string name="dialog_color_picker">Cor do apanhador</string>
+    <string name="press_color_to_apply">Pressione na cor abaixo para aplicar</string>
+
+    <!-- Tempo na barra de status -->
+    <string name="status_bar_show_weather_title">Mostrar previsão do tempo</string>
+    <string name="status_bar_show_weather_summary">Mostrar o clima no cabeçalho da barra de status</string>
+    <string name="weather_cat_statusbar_title">Barra de status</string>
+
+    <!-- Tempo na tela de bloqueio -->
+    <string name="lockscreen_weather_title">Clima</string>
+    <string name="lock_screen_weather_settings_title">Opções de meteorologia</string>
+    <string name="weather_cat_notifications_title">Notificações</string>
+    <string name="weather_show_weather_title">Mostrar previsão do tempo</string>
+    <string name="weather_show_weather_summary">Mostrar tempo na tela de bloqueio</string>
+    <string name="weather_show_location_title">Mostrar a localização</string>
+    <string name="weather_show_location_summary">Ativar para mostrar a localização</string>
+    <string name="weather_show_timestamp_title">Show timestamp</string>
+    <string name="weather_show_location_summary">Display weather location</string>
+    <string name="weather_condition_icon_title">Condição do ícone</string>
+    <string name="weather_condition_icon_dlg_title">Escolha um ícone para exibir a condição de tempo</string>
+    <string name="weather_condition_icon_monochrome_title">Monocromático</string>
+    <string name="weather_condition_icon_colored_title">Colorido</string>
+    <string name="weather_condition_icon_vclouds_title">Nuvens</string>
+    <string name="icons_title">Icones</string>
+    <string name="position_right_title">Direita</string>
+    <string name="position_centered_title">Centralizado</string>
+    <string name="hidden_title">Escondido</string>
+    <string name="weather_hide_panel_title">Ocultar painel de clima</string>
+    <string name="weather_hide_panel_dlg_title">Escolha quando o painel de clima deve ser escondido</string>
+    <string name="weather_hide_panel_auto_title">Automaticamente</string>
+    <string name="weather_hide_panel_custom_title">Personalizado</string>
+    <string name="weather_hide_panel_never_title">Nunca</string>
+    <string name="weather_hide_panel_auto_summary">O painel de tempo vai ser escondido quando as notificações visíveis atigirem o máximo de notificações permitidas na tela de bloqueio</string>
+    <string name="weather_hide_panel_custom_summary">O painel de tempo vai ser escondido quando as notificações visíveis atingirem o número escolhido de notificações</string>
+    <string name="weather_hide_panel_never_summary">O painel de tempo não vai ser escondido</string>
+    <string name="weather_number_of_notifications_title">Número de notificações</string>
+    <string name="weather_settings_options_title">Configurações de localização</string>
+    <string name="weather_settings_summary">Escolha a localização e outras configurações</string>
+
+    <!-- Visualizador na tela de bloqueio -->
+    <string name="lockscreen_visualizer_title">Visualizador de exibição de música</string>
+
+    <!-- Animações do menu de energia -->
+    <string name="power_menu_animation_title">Animações do menu de energia</string>
+    <string name="power_menu_animation_summary">Change the enter/exit animation of the power menu</string>
+    <string name="power_menu_animation_dialog_title">Selecionar a animação do menu de energia</string>
+    <string name="power_menu_animation_aosp">AOSP (padrão)</string>
+    <string name="power_menu_animation_bottom">Inferior</string>
+    <string name="power_menu_animation_top">Parte superior</string>
+
+    <!-- Heads up -->
+    <string name="headsup_section_header">Notificações Heads up</string>
+    <string name="summary_heads_up_enabled">Notificações pop-up estão ativadas</string>
+    <string name="summary_heads_up_disabled">Notificações pop-up estão desativadas</string>
+
+    <!--Tempo na  barra de status -->
+    <string name="status_bar_show_weather_title">Mostrar previsão do tempo</string>
+    <string name="status_bar_show_weather_summary">Mostrar o clima no cabeçalho barra de status</string>
+	
+</resources>
