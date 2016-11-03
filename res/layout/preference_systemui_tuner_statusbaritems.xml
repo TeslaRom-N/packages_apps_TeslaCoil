@@ -60,3 +60,5 @@
             android:maxLines="2" />
 
     </RelativeLayout>
+
+</LinearLayout>
