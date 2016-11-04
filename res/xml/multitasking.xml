@@ -15,9 +15,18 @@
   along with this program.  If not, see <http://www.gnu.org/licenses/>.
  -->
 
-<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
-    android:title="@string/multitasking_category" >
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="@string/system_category"
+    android:layout="@layout/tab"
+    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+
+        <com.gzr.teslacoil.preference.SystemSettingSwitchPreference
+            android:key="screenshot_type"
+            android:title="@string/screenshot_type_title"
+            android:summaryOn="@string/screenshot_type_summary_full"
+            android:summaryOff="@string/screenshot_type_summary_selected"
+            android:defaultValue="false" />
 
 </PreferenceScreen>
 

@@ -480,4 +480,9 @@
     <string name="tuner_full_zen_title">Do not disturb switch</string>
     <string name="tuner_full_zen_summary">Show a do not disturb switch in the volume panel</string>
 
+    <!-- Optional screenshot type -->
+    <string name="screenshot_type_title">Screenshot type</string>
+    <string name="screenshot_type_summary_full">Take fullscreen screenshots</string>
+    <string name="screenshot_type_summary_selected">Select which part of the screen you want to screenshot</string>
+
 </resources>
