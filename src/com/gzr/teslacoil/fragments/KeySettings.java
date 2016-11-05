@@ -94,8 +94,6 @@ public class KeySettings extends SettingsPreferenceFragment implements
 
     private PreferenceCategory mNavigationPreferencesCat;
 
-    private PreferenceScreen key_settings;
-
     private Handler mHandler;
 
     @Override
@@ -123,16 +121,6 @@ public class KeySettings extends SettingsPreferenceFragment implements
                 (PreferenceCategory) prefScreen.findPreference(CATEGORY_MENU);
 
         mHandler = new Handler();
-
-        // look for hwkeys overlay
-        key_settings = (PreferenceScreen) prefScreen.findPreference("key_settings");
-
-        boolean showHwKeys = getResources().getBoolean(
-                com.android.internal.R.bool.config_showHwKeys);
-                
-        if(!showHwKeys) {
-        	prefScreen.removePreference(key_settings);
-            }
 
         if (hasHomeKey) {
             int defaultLongPressAction = res.getInteger(
