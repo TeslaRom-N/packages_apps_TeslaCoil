@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--  Copyright (C) 2014-2016 The Dirty Unicorns Project
+<!--  Copyright (C) 2016 Ground Zero Roms
 
   This program is free software: you can redistribute it and/or modify
   it under the terms of the GNU General Public License as published by
@@ -17,20 +17,16 @@
 
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:title="@string/navigation_category"
+    android:title="@string/screenshot_type_category"
     android:layout="@layout/tab"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
-     <Preference
-        android:key="navigation_options"
-        android:fragment="com.gzr.teslacoil.fragments.NavbarSettings"
-        android:layout="@layout/preference_navigation"
-        android:title="@string/navigationbar_settings_title" />
-
-    <PreferenceScreen
-        android:key="button_settings"
-        android:title="@string/button_settings"
-        android:fragment="com.gzr.teslacoil.fragments.ButtonSettings"
-        android:layout="@layout/preference_buttons" />
+         <com.gzr.teslacoil.preference.SystemSettingSwitchPreference
+            android:key="screenshot_type"
+            android:title="@string/screenshot_type_title"
+            android:summaryOn="@string/screenshot_type_summary_full"
+            android:summaryOff="@string/screenshot_type_summary_selected"
+            android:defaultValue="false" />
 
 </PreferenceScreen>
+

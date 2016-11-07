@@ -36,10 +36,11 @@
             android:layout="@layout/preference_weather" 
             />
 
-       <com.gzr.teslacoil.preference.SecureSettingSwitchPreference
+         <PreferenceScreen
             android:key="lockscreen_visualizer"
-            android:title="@string/lockscreen_visualizer_title"
-            android:defaultValue="true"/>
+            android:title="@string/lockscreen_visualizer_category"
+            android:fragment="com.gzr.teslacoil.fragments.LockscreenVisualizer"
+            android:layout="@layout/preference_lockscreen_visualizer"/>
 
 </PreferenceScreen>
 
