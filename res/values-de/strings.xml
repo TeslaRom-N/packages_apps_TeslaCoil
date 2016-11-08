@@ -21,6 +21,7 @@
     <string name="quicksettings_category">Schnelleinstellungen</string>
     <string name="traffic_category">Traffic Indicator</string>
     <string name="statusbar_notifications_category">Benachrichtigungen</string>
+    <string name="nightmode_category">Nacht Modus</string>
 
     <!-- Dialog -->
     <string name="teslacoil_dialog_title">Demnächst!!</string>
@@ -381,5 +382,28 @@
     <string name="heads_up_notifications">Heads Up</string>
     <string name="summary_heads_up_enabled">Pop-up-Benachrichtigungen sind aktiviert</string>
     <string name="summary_heads_up_disabled">Pop-up-Benachrichtigungen sind deaktiviert</string>
+
+    <!-- Custom carrier label and position -->
+    <string name="carrier_label_settings_title">Carrier Label</string>
+    <string name="custom_carrier_label_title">Benutzerdefiniertes Carrier Label</string>
+    <string name="custom_carrier_label_explain">Bitte geben Sie ein neues Label ein. Für Stock Label leer lassen.
+</string>
+    <string name="custom_carrier_label_notset">Benutzerdefiniertes Label ist derzeit nicht eingestellt
+</string>
+    <string name="show_carrier_title">Carrier Label</string>
+    <string name="show_carrier_disabled">deaktiviert</string>
+    <string name="show_carrier_keyguard">nur Sperrbildschirm</string>
+    <string name="show_carrier_statusbar">nur Statusbar</string>
+    <string name="show_carrier_enabled">Sperrbildschirm &amp; Statusbar</string>
+
+    <!-- Optional screenshot type -->
+    <string name="screenshot_type_title">Screenshot Type</string>
+    <string name="screenshot_type_summary_full">Vollbild Screenshot</string>
+    <string name="screenshot_type_summary_selected">Wählen Sie aus, welchen Teil des Bildschirms Sie für den Screenshot möchten
+</string>
+
+    <!-- Wifi toggle -->
+    <string name="qs_wifi_easy_toggle_title">WiFi leicht umschaltbar</string>
+    <string name="qs_wifi_easy_toggle_summary">Wifi wird an- oder ausgeschalten anstatt in die Einstellungen zu gelangen.</string>
 
 </resources>
