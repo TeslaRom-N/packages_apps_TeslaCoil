@@ -256,6 +256,9 @@
     <string name="qs_rows_columns_7_title">7</string>
     <string name="qs_rows_columns_8_title">8</string>
     <string name="qs_small_tiles_title">Small QS tiles</string>
+    <string name="qs_tile_title_visibility_title">QS tile titles</string>
+    <string name="qs_tile_title_visibility_summary_on">QS tiles titles are now visible</string>
+    <string name="qs_tile_title_visibility_summary_off">QS tiles titles are now gone</string>
 
     <!-- Color Picker -->
     <string name="dialog_color_picker">Color Picker</string>
