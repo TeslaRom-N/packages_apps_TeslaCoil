@@ -17,6 +17,14 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/powermenu_category" >
 
+         <com.gzr.teslacoil.preference.CustomSeekBarPreference
+            android:key="power_reboot_dialog_dim"
+            android:title="@string/powermenu_dialog_dim"
+            android:max="100"
+            settings:min="0"
+            settings:units=""
+            android:persistent="false" />
+
          <com.gzr.teslacoil.preference.SystemSettingSwitchPreference
             android:key="powermenu_power"
             android:title="@string/powermenu_power"

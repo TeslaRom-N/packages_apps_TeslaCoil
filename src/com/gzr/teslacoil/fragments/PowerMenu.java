@@ -32,11 +32,14 @@ import com.android.settings.R;
 import com.android.internal.logging.MetricsProto.MetricsEvent;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.Utils;
+import com.gzr.teslacoil.preference.CustomSeekBarPreference;
 
 public class PowerMenu extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
     private static final String KEY_ADVANCED_REBOOT = "advanced_reboot";
+    private static final String POWER_REBOOT_DIALOG_DIM = "power_reboot_dialog_dim";
 
     private ListPreference mAdvancedReboot;
+    private CustomSeekBarPreference mPowerRebootDialogDim;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -45,12 +48,19 @@ public class PowerMenu extends SettingsPreferenceFragment implements OnPreferenc
         addPreferencesFromResource(R.xml.powermenu);
 
         final ContentResolver resolver = getActivity().getContentResolver();
+        final PreferenceScreen prefScreen = getPreferenceScreen();
 
         mAdvancedReboot = (ListPreference) findPreference(KEY_ADVANCED_REBOOT);
         mAdvancedReboot.setValue(String.valueOf(Settings.Secure.getInt(
                 getContentResolver(), Settings.Secure.ADVANCED_REBOOT, 1)));
         mAdvancedReboot.setSummary(mAdvancedReboot.getEntry());
         mAdvancedReboot.setOnPreferenceChangeListener(this);
+
+        mPowerRebootDialogDim = (CustomSeekBarPreference) prefScreen.findPreference(POWER_REBOOT_DIALOG_DIM);
+        int powerRebootDialogDim = Settings.System.getInt(resolver,
+                Settings.System.POWER_REBOOT_DIALOG_DIM, 50);
+        mPowerRebootDialogDim.setValue(powerRebootDialogDim / 1);
+        mPowerRebootDialogDim.setOnPreferenceChangeListener(this);
     }
 
     @Override
@@ -63,16 +73,19 @@ public class PowerMenu extends SettingsPreferenceFragment implements OnPreferenc
         super.onResume();
     }
 
-    public boolean onPreferenceChange(Preference preference, Object value) {
+    @Override
+    public boolean onPreferenceChange(Preference preference, Object newValue) {
         if (preference == mAdvancedReboot) {
             Settings.Secure.putInt(getContentResolver(), Settings.Secure.ADVANCED_REBOOT,
-                    Integer.valueOf((String) value));
-            mAdvancedReboot.setValue(String.valueOf(value));
+                    Integer.valueOf((String) newValue));
+            mAdvancedReboot.setValue(String.valueOf(newValue));
             mAdvancedReboot.setSummary(mAdvancedReboot.getEntry());
-        } else {
-            return false;
+        } else if (preference == mPowerRebootDialogDim) {
+            int alpha = (Integer) newValue;
+            Settings.System.putInt(getActivity().getContentResolver(),
+                    Settings.System.POWER_REBOOT_DIALOG_DIM, alpha * 1);
+            return true;
         }
-
-        return true;
+        return false;
     }
 }
