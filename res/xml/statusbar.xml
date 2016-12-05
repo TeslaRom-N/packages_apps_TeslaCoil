@@ -28,6 +28,12 @@
         android:layout="@layout/preference_statusbarclock" />
 
     <PreferenceScreen
+        android:key="status_bar_battery_style"
+        android:title="@string/status_bar_battery_style_category"
+        android:layout="@layout/preference_battery_style"
+        android:fragment="com.gzr.teslacoil.fragments.StatusbarBatteryStyle" />
+
+    <PreferenceScreen
         android:key="quicksettings"
         android:fragment="com.gzr.teslacoil.fragments.QuickSettings"
         android:layout="@layout/preference_systemui_tuner_qs"
