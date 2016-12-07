@@ -981,4 +981,8 @@
     <string name="one_handed_mode_title">One handed mode</string>
     <string name="one_handed_mode_summary">Allows swiping on the navigation bar to enable one handed mode</string>
 
+    <!-- Toast Icons -->
+     <string name="toast_icon_title">Toast icon</string>
+     <string name="toast_icon_summary">Display the app icon corresponding with the toast</string>
+
 </resources>

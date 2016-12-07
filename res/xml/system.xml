@@ -39,4 +39,10 @@
             android:title="@string/settings_blur_cat"
             android:layout="@layout/preference_blur" />
 
+         <com.gzr.teslacoil.preference.SystemSettingSwitchPreference
+            android:key="toast_icon"
+            android:title="@string/toast_icon_title"
+            android:summary="@string/toast_icon_summary"
+            android:defaultValue="true" />
+
 </PreferenceScreen>
