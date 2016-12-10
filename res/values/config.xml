@@ -20,5 +20,9 @@
     <integer name="config_qs_num_rows_landscape_default">1</integer>
     <integer name="config_qs_num_columns_landscape_default">4</integer>
 
+    <!-- Home button Wake Support. Some devices do not support this.
+         Setting to false will disable Home button Wake support -->
+    <bool name="config_show_homeWake">false</bool>
+
 </resources>
 

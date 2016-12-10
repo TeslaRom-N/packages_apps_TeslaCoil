@@ -49,6 +49,12 @@
         android:summary="@string/volume_keys_control_media_stream_summary"
         android:defaultValue="false" />
 
+    <SwitchPreference
+        android:key="home_button_wake"
+        android:summary="@string/home_button_wake_summary"
+        android:title="@string/home_button_wake_title"
+        android:defaultValue="true" />
+
     <PreferenceCategory
         android:key="hardware_keys"
         android:title="@string/hardware_keys_category" >

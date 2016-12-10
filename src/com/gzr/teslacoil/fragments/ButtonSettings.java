@@ -43,6 +43,7 @@ public class ButtonSettings extends ActionFragment implements OnPreferenceChange
 
     private static final String HWKEY_DISABLE = "hardware_keys_disable";
     private static final String SWAP_VOLUME_BUTTONS = "swap_volume_buttons";
+    private static final String HOME_BUTTON_WAKE = "home_button_wake";
     private static final String VOLUME_ROCKER_WAKE = "volume_rocker_wake";
     public static final String VOLUME_ROCKER_MUSIC_CONTROLS = "volume_rocker_music_controls";
 
@@ -67,6 +68,7 @@ public class ButtonSettings extends ActionFragment implements OnPreferenceChange
     public static final int KEY_MASK_VOLUME = 0x40;
 
     private SwitchPreference mSwapVolumeButtons;
+    private SwitchPreference mHomeButtonWake;
     private SwitchPreference mVolumeRockerWake;
     private SwitchPreference mVolumeRockerMusicControl;
     private SwitchPreference mHwKeyDisable;
@@ -117,6 +119,9 @@ public class ButtonSettings extends ActionFragment implements OnPreferenceChange
         final PreferenceCategory appSwitchCategory =
                 (PreferenceCategory) prefScreen.findPreference(CATEGORY_APPSWITCH);
 
+        Resources res = getResources();
+        mHomeButtonWake = (SwitchPreference) findPreference(HOME_BUTTON_WAKE);
+
         // back key
         if (!hasBackKey) {
             prefScreen.removePreference(backCategory);
@@ -125,6 +130,17 @@ public class ButtonSettings extends ActionFragment implements OnPreferenceChange
         // home key
         if (!hasHomeKey) {
             prefScreen.removePreference(homeCategory);
+        }
+
+        boolean showHomeWake = res.getBoolean(R.bool.config_show_homeWake);
+        if (!hasHomeKey || !showHomeWake) {
+            prefScreen.removePreference(mHomeButtonWake);
+        }
+        else {
+            mHomeButtonWake.setOnPreferenceChangeListener(this);
+            int homeButtonWake = Settings.System.getInt(getContentResolver(),
+                    HOME_BUTTON_WAKE, 1);
+            mHomeButtonWake.setChecked(homeButtonWake != 0);
         }
 
         // App switch key (recents)
@@ -192,6 +208,11 @@ public class ButtonSettings extends ActionFragment implements OnPreferenceChange
         } else if (preference == mVolumeRockerMusicControl) {
             boolean value = (Boolean) newValue;
             Settings.System.putInt(getContentResolver(), VOLUME_ROCKER_MUSIC_CONTROLS,
+                    value ? 1 : 0);
+            return true;
+        } else if (preference == mHomeButtonWake) {
+            boolean value = (Boolean) newValue;
+            Settings.System.putInt(getContentResolver(), HOME_BUTTON_WAKE,
                     value ? 1 : 0);
             return true;
         } else if (preference == mHwKeyDisable) {

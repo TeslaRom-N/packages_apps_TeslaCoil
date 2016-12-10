@@ -69,6 +69,10 @@
     <string name="swap_volume_buttons_title">Reorient</string>
     <string name="swap_volume_buttons_summary">Swap volume buttons when the screen is rotated</string>
 
+    <!-- Home button wake -->
+    <string name="home_button_wake_title">Home button wake</string>
+    <string name="home_button_wake_summary">Pressing the home button will wake your device</string>
+
     <!-- Volume rocker wake -->
     <string name="volume_rocker_wake_title">Volume rocker wake</string>
     <string name="volume_rocker_wake_summary">Pressing the volume keys will wake your device</string>
