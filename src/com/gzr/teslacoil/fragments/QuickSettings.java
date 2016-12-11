@@ -47,13 +47,17 @@ import com.android.internal.logging.MetricsProto.MetricsEvent;
 import com.android.internal.widget.LockPatternUtils;
 import com.android.settings.Utils;
 
+import com.gzr.teslacoil.preference.CustomSeekBarPreference;
+
 public class QuickSettings extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
 
     private static final String PREF_TILE_ANIM_STYLE = "qs_tile_animation_style";
     private static final String PREF_TILE_ANIM_DURATION = "qs_tile_animation_duration";
     private static final String PREF_TILE_ANIM_INTERPOLATOR = "qs_tile_animation_interpolator";
+    private static final String PREF_SYSUI_QQS_COUNT = "sysui_qqs_count_key";
     private static final String QUICK_PULLDOWN = "quick_pulldown";
 
+    private CustomSeekBarPreference mSysuiQqsCount;
     private ListPreference mTileAnimationStyle;
     private ListPreference mTileAnimationDuration;
     private ListPreference mTileAnimationInterpolator;
@@ -100,6 +104,12 @@ public class QuickSettings extends SettingsPreferenceFragment implements OnPrefe
         mQuickPulldown.setValue(String.valueOf(quickPulldownValue));
         updatePulldownSummary(quickPulldownValue);
 
+        mSysuiQqsCount = (CustomSeekBarPreference) findPreference(PREF_SYSUI_QQS_COUNT);
+        int SysuiQqsCount = Settings.Secure.getInt(getContentResolver(),
+                Settings.Secure.QQS_COUNT, 6);
+        mSysuiQqsCount.setValue(SysuiQqsCount / 1);
+        mSysuiQqsCount.setOnPreferenceChangeListener(this);
+
     }
 
     @Override
@@ -138,6 +148,11 @@ public class QuickSettings extends SettingsPreferenceFragment implements OnPrefe
             Settings.System.putIntForUser(getContentResolver(), Settings.System.STATUS_BAR_QUICK_QS_PULLDOWN,
                     quickPulldownValue, UserHandle.USER_CURRENT);
             updatePulldownSummary(quickPulldownValue);
+            return true;
+        } else if (preference == mSysuiQqsCount) {
+            int SysuiQqsCount = (Integer) objValue;
+            Settings.Secure.putInt(getActivity().getContentResolver(),
+                    Settings.Secure.QQS_COUNT, SysuiQqsCount * 1);
             return true;
         }
         return false;
