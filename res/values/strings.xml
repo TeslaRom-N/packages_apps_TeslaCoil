@@ -178,6 +178,11 @@
     <string name="brightness_icon_title">Brightness icon </string>
     <string name="brightness_icon_summary">Show a brightness icon to the left of the brighness slider to adjust auto-brightness</string>
 
+    <!-- Status bar brightness control -->
+    <string name="status_bar_brightness_control_title">Brightness control</string>
+    <string name="status_bar_brightness_control_summary">Adjust brightness by sliding across status bar</string>
+    <string name="status_bar_brightness_control_info">Automatic brightness must be disabled</string>
+
     <!-- Navbar Tuner -->
     <string name="navbar_tuner_title">Navbar Tuner</string>
 
