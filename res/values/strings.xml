@@ -862,4 +862,8 @@
     <string name="lockscreen_colors_reset_title">Reset lockscreen colors</string>
     <string name="lockscreen_colors_reset_message">Are you sure you want to reset these colors to default?</string>
     <string name="yes">YES</string>
+
+    <!-- Power notification controls -->
+    <string name="power_notification_controls_title">Power notification controls</string>
+    <string name="power_notification_controls_summary">Select importance level for notifications</string>
 </resources>
