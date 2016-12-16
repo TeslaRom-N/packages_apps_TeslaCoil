@@ -27,6 +27,12 @@
         android:layout="@layout/preference_navigation"
         android:title="@string/navigationbar_settings_title" />
 
+    <Preference
+        android:key="pa_pie_control"
+        android:title="@string/pa_pie_control_title"
+        android:fragment="com.gzr.teslacoil.fragments.PieControl"
+        android:layout="@layout/preference_pie" />
+
     <PreferenceScreen
         android:key="button_settings"
         android:title="@string/button_settings"
