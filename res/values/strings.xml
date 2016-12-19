@@ -625,6 +625,7 @@
     <string name="text_charging_symbol_tilde">Tilde</string>
 
     <!-- Lockscreen battery info indicator  -->
+    <string name="lockscreen_battery_category">Lockscreen Battery</string>
     <string name="lockscreen_battery_info_title">Lockscreen battery info</string>
     <string name="lockscreen_battery_info_summary">Display negotiated charger max current-voltage and battery temperature on lockscreen while charging</string>
 </resources>

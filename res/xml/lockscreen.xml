@@ -42,11 +42,11 @@
             android:fragment="com.gzr.teslacoil.fragments.TaptosleepLockscreen"
             android:layout="@layout/preference_tap_to_sleep" />
 
-     <com.gzr.teslacoil.preference.SystemSettingSwitchPreference
-            android:key="lockscreen_battery_info"
-            android:title="@string/lockscreen_battery_info_title"
-            android:summary="@string/lockscreen_battery_info_summary" 
-            android:defaultValue="false" />
+     <PreferenceScreen
+            android:key="lockscreen_battery"
+            android:title="@string/lockscreen_battery_category"
+            android:fragment="com.gzr.teslacoil.fragments.LockScreenBattery"
+            android:layout="@layout/preference_lockscreen_battery" />
             
 
 </PreferenceScreen>
