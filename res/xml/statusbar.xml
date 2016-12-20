@@ -33,6 +33,12 @@
         android:layout="@layout/preference_statusbar_battery_style"
         android:fragment="com.gzr.teslacoil.fragments.StatusbarBatteryStyle" />
 
+    <PreferenceScreen
+        android:key="batterybar"
+        android:fragment="com.gzr.teslacoil.fragments.BatteryBar"
+        android:title="@string/battery_bar_title"
+        android:layout="@layout/preference_battery_bar" />
+
     <Preference
         android:key="statusbar_weather"
         android:title="@string/weather_category"
