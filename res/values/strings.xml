@@ -611,4 +611,9 @@
     <string name="tap_to_sleep_category">Tap to Sleep</string>
     <string name="double_tap_to_sleep_title">Double-tap to sleep</string>
     <string name="double_tap_to_sleep_summary">Double tap on the status bar to put the device to sleep</string>
+
+    <!-- Lockscreen double tap to sleep -->
+    <string name="tap_to_sleep_lockscreen_category">Tap to Sleep on Lockscreen</string>
+    <string name="double_tap_sleep_anywhere_title">Double-tap to sleep anywhere</string>
+    <string name="double_tap_sleep_anywhere_summary">Double tap anywhere on the lockscreen to put the device to sleep</string>
 </resources>

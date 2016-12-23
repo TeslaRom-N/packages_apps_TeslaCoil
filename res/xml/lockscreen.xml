@@ -36,5 +36,12 @@
             android:layout="@layout/preference_weather" 
             />
 
+     <PreferenceScreen
+            android:key="tap_to_sleep_lockscreen"
+            android:title="@string/tap_to_sleep_lockscreen_category"
+            android:fragment="com.gzr.teslacoil.fragments.TaptosleepLockscreen"
+            android:layout="@layout/preference_tap_to_sleep" />
+            
+
 </PreferenceScreen>
 
