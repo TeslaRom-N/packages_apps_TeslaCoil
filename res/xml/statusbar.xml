@@ -67,4 +67,10 @@
         android:layout="@layout/preference_carrier_label"
         android:title="@string/carrier_label_settings_title" />
 
+     <PreferenceScreen
+        android:key="tap_to_sleep"
+        android:fragment="com.gzr.teslacoil.fragments.TaptoSleep"
+        android:layout="@layout/preference_tap_to_sleep"
+        android:title="@string/tap_to_sleep_category" />
+
 </PreferenceScreen>

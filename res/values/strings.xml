@@ -606,4 +606,9 @@
     <string name="pa_pie_button_color_title">Buttons Color</string>
     <string name="pa_pie_always_right_title">Pie always on the right</string>
     <string name="pa_pie_always_right_summary">Pie will be always shown on the right while in landscape</string>
+
+    <!-- double tap statusbar to sleep -->
+    <string name="tap_to_sleep_category">Tap to Sleep</string>
+    <string name="double_tap_to_sleep_title">Double-tap to sleep</string>
+    <string name="double_tap_to_sleep_summary">Double tap on the status bar to put the device to sleep</string>
 </resources>
