@@ -33,4 +33,9 @@
             android:layout="@layout/preference_expanded_desktop"
             android:title="@string/power_menu_expanded_desktop" />
 
+         <PreferenceScreen
+            android:key="blur"
+            android:fragment="com.gzr.teslacoil.fragments.BlurPersonalizations"
+            android:title="@string/settings_blur_cat" />
+
 </PreferenceScreen>
