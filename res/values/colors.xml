@@ -24,4 +24,6 @@
 
     <color name="theme_accent">#ff009688</color>
     <color name="action_picker_fab_background">@color/theme_accent</color>
+
+    <color name="seekbar_dot_color">@android:color/holo_red_light</color>
 </resources>
