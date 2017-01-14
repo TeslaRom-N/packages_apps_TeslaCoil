@@ -884,4 +884,15 @@
     <!-- qqs scroller -->
     <string name="qqs_scroll_title">Scroll small QS tiles</string>
     <string name="qqs_scroll_summary">Allow scrolling through the small QS tiles</string>
+
+    <!-- Status Bar Ticker -->
+    <string name="ticker_screen_title">Ticker</string>
+    <string name="ticker_title">Status Bar Ticker</string>
+    <string name="ticker_screen_summary">Customize the ticker style</string>
+    <string name="ticker_summary">Enable the old status bar ticker</string>
+    <string name="ticker_restore_defaults_title">Restore defaults</string>
+    <string name="text_title">Text</string>
+    <string name="icon_title">Icon</string>
+    <string name="colors_title">Colors</string>
+
 </resources>
