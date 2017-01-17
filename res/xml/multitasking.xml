@@ -31,5 +31,11 @@
             android:layout="@layout/preference_recents"
             android:title="@string/recents_category" />
 
+    <PreferenceScreen
+            android:key="gesture_anywhere"
+            android:fragment="com.gzr.teslacoil.gestureanywhere.GestureAnywhereSettings"
+            android:layout="@layout/preference_gesture"
+            android:title="@string/gesture_anywhere_title" />
+
 </PreferenceScreen>
 
