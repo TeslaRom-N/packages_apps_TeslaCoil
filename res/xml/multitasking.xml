@@ -37,5 +37,11 @@
             android:layout="@layout/preference_gesture"
             android:title="@string/gesture_anywhere_title" />
 
+    <PreferenceScreen
+            android:key="app_circle_bar"
+            android:fragment="com.gzr.teslacoil.fragments.AppCircleBar"
+            android:layout="@layout/preference_appbar"
+            android:title="@string/app_circle_bar_title" />
+
 </PreferenceScreen>
 
