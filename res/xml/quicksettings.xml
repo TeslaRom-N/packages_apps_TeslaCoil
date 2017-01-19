@@ -97,6 +97,12 @@
          android:summary="@string/qs_wifi_easy_toggle_summary"
          android:defaultValue="false" />
 
+    <com.gzr.teslacoil.preference.SecureSettingSwitchPreference
+        android:key="qs_bt_advanced"
+        android:title="@string/qs_advanced_bt_title"
+        android:summary="@string/qs_advanced_bt_summary"
+        android:defaultValue="false" />
+
     <PreferenceCategory
         android:key="quicksettings_header"
         android:title="@string/qs_header_title" />
