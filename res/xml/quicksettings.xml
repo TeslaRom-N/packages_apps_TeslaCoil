@@ -86,21 +86,9 @@
         android:defaultValue="false" />
 
     <com.gzr.teslacoil.preference.SecureSettingSwitchPreference
-        android:key="qs_data_advanced"
-        android:title="@string/qs_advanced_data_title"
-        android:summary="@string/qs_advanced_data_summary"
-        android:defaultValue="false" />
-
-    <com.gzr.teslacoil.preference.SecureSettingSwitchPreference
-         android:key="qs_wifi_easy_toggle"
-         android:title="@string/qs_wifi_easy_toggle_title"
-         android:summary="@string/qs_wifi_easy_toggle_summary"
-         android:defaultValue="false" />
-
-    <com.gzr.teslacoil.preference.SecureSettingSwitchPreference
-        android:key="qs_bt_advanced"
-        android:title="@string/qs_advanced_bt_title"
-        android:summary="@string/qs_advanced_bt_summary"
+        android:key="qs_easy_toggle"
+        android:title="@string/qs_easy_toggle_title"
+        android:summary="@string/qs_easy_toggle_summary"
         android:defaultValue="false" />
 
     <PreferenceCategory
