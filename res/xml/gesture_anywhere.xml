@@ -41,31 +41,31 @@
     <PreferenceCategory
         android:title="@string/trigger_category" />
 
-    <ListPreference
+    <com.gzr.teslacoil.preference.CustomSeekBarPreference
         android:key="gesture_anywhere_trigger_width"
-        android:persistent="false"
-        android:title="@string/trigger_width_title"
         android:summary="@string/trigger_width_summary"
-        android:entries="@array/gesture_anywhere_trigger_width_entries"
-        android:entryValues="@array/gesture_anywhere_trigger_width_values"
+        android:defaultValue="4"
+        settings:max="64"
+        settings:min="4"
+        settings:units="px"
         android:dependency="gesture_anywhere_enabled" />
 
-    <ListPreference
+    <com.gzr.teslacoil.preference.CustomSeekBarPreference
         android:key="gesture_anywhere_trigger_top"
-        android:persistent="false"
-        android:title="@string/trigger_top_title"
         android:summary="@string/trigger_top_summary"
-        android:entries="@array/gesture_anywhere_trigger_top_entries"
-        android:entryValues="@array/gesture_anywhere_trigger_top_values"
+        android:defaultValue="0"
+        settings:max="99"
+        settings:min="0"
+        settings:units="%"
         android:dependency="gesture_anywhere_enabled" />
 
-    <ListPreference
+    <com.gzr.teslacoil.preference.CustomSeekBarPreference
         android:key="gesture_anywhere_trigger_bottom"
-        android:persistent="false"
-        android:title="@string/trigger_bottom_title"
         android:summary="@string/trigger_bottom_summary"
-        android:entries="@array/gesture_anywhere_trigger_bottom_entries"
-        android:entryValues="@array/gesture_anywhere_trigger_bottom_values"
+        android:defaultValue="100"
+        settings:max="100"
+        settings:min="1"
+        settings:units="%"
         android:dependency="gesture_anywhere_enabled" />
 
 </PreferenceScreen>
