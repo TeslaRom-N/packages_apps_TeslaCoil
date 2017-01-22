@@ -49,10 +49,10 @@
             android:layout="@layout/preference_lockscreen_battery" />
 
      <PreferenceScreen
-            android:key="lock_clock_fonts"
-            android:title="@string/lock_screen_font_title"
-            android:fragment="com.gzr.teslacoil.fragments.LockClockFonts"
-            android:layout="@layout/preference_lock_clock_fonts" />
+            android:key="lockscreen_colors_fonts"
+            android:title="@string/lockscreen_colors_fonts_category_title"
+            android:fragment="com.gzr.teslacoil.fragments.LockscreenColorsFonts"
+            android:layout="@layout/preference_lockscreen_colors_fonts" />
             
 </PreferenceScreen>
 
