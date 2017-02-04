@@ -61,11 +61,11 @@
          android:persistent="false"
          android:dependency="status_bar_custom_header" />
 
-     <com.gzr.teslacoil.preference.SystemSettingSwitchPreference
+     <!--<com.gzr.teslacoil.preference.SystemSettingSwitchPreference
          android:key="qs_quickbar_scroll_enabled"
          android:title="@string/qqs_scroll_title"
          android:summary="@string/qqs_scroll_summary"
-         android:defaultValue="false"/>
+         android:defaultValue="false"/> -->
 
     <com.gzr.teslacoil.preference.SecureSettingSwitchPreference
         android:key="qs_show_brightness"
