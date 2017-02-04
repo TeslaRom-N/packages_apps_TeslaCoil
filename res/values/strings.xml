@@ -895,4 +895,8 @@
     <string name="icon_title">Icon</string>
     <string name="colors_title">Colors</string>
 
+    <!-- Keyguard Statusbar Clock -->
+    <string name="keyguard_statusbar_clock_title">Keyguard statusbar clock</string>
+    <string name="keyguard_statusbar_clock_summary">Show the left statusbar clock on the keyguard</string>
+
 </resources>
