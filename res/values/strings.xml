@@ -38,6 +38,7 @@
     <string name="navigation_category">Navigation</string>
     <string name="multitasking_category">Multi-Tasking</string>
     <string name="weather_cat_lockscreen">Lockscreen</string>
+    <string name="lockscreen_extra_category">Lockscreen Extras</string>
 
     <string name="button_settings">Button settings</string>
     <string name="quicksettings_category">Quick settings</string>

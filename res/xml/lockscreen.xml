@@ -53,6 +53,12 @@
             android:title="@string/lockscreen_colors_fonts_category_title"
             android:fragment="com.gzr.teslacoil.fragments.LockscreenColorsFonts"
             android:layout="@layout/preference_lockscreen_colors_fonts" />
+
+     <PreferenceScreen
+            android:key="lockscreen_extra"
+            android:title="@string/lockscreen_extra_category"
+            android:fragment="com.gzr.teslacoil.fragments.LockScreenExtra"
+            android:layout="@layout/preference_lockscreen_extra" />
             
 </PreferenceScreen>
 
