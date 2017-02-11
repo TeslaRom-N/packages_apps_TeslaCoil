@@ -70,9 +70,5 @@
             android:title="@string/status_bar_show_clock_second_title"
             android:defaultValue="false" />
 
-       <com.gzr.teslacoil.preference.SystemSettingSwitchPreference
-            android:key="keyguard_show_clock"
-            android:title="@string/keyguard_statusbar_clock_title"
-            android:summary="@string/keyguard_statusbar_clock_summary" />
 </PreferenceScreen>
 
