@@ -65,6 +65,7 @@ public class QuickSettings extends SettingsPreferenceFragment implements OnPrefe
     private static final String PREF_TILE_ANIM_INTERPOLATOR = "qs_tile_animation_interpolator";
     private static final String PREF_SYSUI_QQS_COUNT = "sysui_qqs_count_key";
     private static final String QUICK_PULLDOWN = "quick_pulldown";
+    private static final String PREF_COLUMNS = "qs_layout_columns";
     private static final String CUSTOM_HEADER_IMAGE_SHADOW = "status_bar_custom_header_shadow";
     private static final String CUSTOM_HEADER_IMAGE = "status_bar_custom_header";
     private static final String DAYLIGHT_HEADER_PACK = "daylight_header_pack";
@@ -123,6 +124,12 @@ public class QuickSettings extends SettingsPreferenceFragment implements OnPrefe
                 Settings.System.STATUS_BAR_QUICK_QS_PULLDOWN, 1, UserHandle.USER_CURRENT);
         mQuickPulldown.setValue(String.valueOf(quickPulldownValue));
         updatePulldownSummary(quickPulldownValue);
+
+        mQsColumns = (CustomSeekBarPreference) findPreference(PREF_COLUMNS);
+        int columnsQs = Settings.System.getInt(resolver,
+                Settings.System.QS_LAYOUT_COLUMNS, 3);
+        mQsColumns.setValue(columnsQs / 1);
+        mQsColumns.setOnPreferenceChangeListener(this);
 
         mSysuiQqsCount = (CustomSeekBarPreference) findPreference(PREF_SYSUI_QQS_COUNT);
         int SysuiQqsCount = Settings.Secure.getInt(getContentResolver(),
@@ -214,6 +221,11 @@ public class QuickSettings extends SettingsPreferenceFragment implements OnPrefe
             Settings.System.putIntForUser(getContentResolver(), Settings.System.STATUS_BAR_QUICK_QS_PULLDOWN,
                     quickPulldownValue, UserHandle.USER_CURRENT);
             updatePulldownSummary(quickPulldownValue);
+            return true;
+        } else if (preference == mQsColumns) {
+            int qsColumns = (Integer) objValue;
+            Settings.System.putInt(getActivity().getContentResolver(),
+                    Settings.System.QS_LAYOUT_COLUMNS, qsColumns * 1);
             return true;
         } else if (preference == mSysuiQqsCount) {
             int SysuiQqsCount = (Integer) objValue;
