@@ -36,6 +36,7 @@
          <PreferenceScreen
             android:key="blur"
             android:fragment="com.gzr.teslacoil.fragments.BlurPersonalizations"
-            android:title="@string/settings_blur_cat" />
+            android:title="@string/settings_blur_cat"
+            android:layout="@layout/preference_blur" />
 
 </PreferenceScreen>
