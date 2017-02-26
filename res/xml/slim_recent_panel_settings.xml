@@ -61,13 +61,13 @@
             defaultColor="#00ffffff"
             alphaSlider="true" />
 
-        <net.margaritov.preference.colorpicker.ColorPickerPreference
+        <!--<net.margaritov.preference.colorpicker.ColorPickerPreference
             android:key="recent_card_bg_color"
             android:title="@string/recent_card_bg_color_title"
             defaultColor="#00ffffff"
             alphaSlider="true" />
 
-        <!-- <net.margaritov.preference.colorpicker.ColorPickerPreference
+         <net.margaritov.preference.colorpicker.ColorPickerPreference
             android:key="recent_card_text_color"
             android:title="@string/recent_card_text_color_title"
             defaultColor="#00ffffff"

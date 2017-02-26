@@ -63,9 +63,9 @@ public class SlimRecentPanel extends /*Slim*/SettingsPreferenceFragment implemen
             "recent_panel_expanded_mode";
     private static final String RECENT_PANEL_BG_COLOR =
             "recent_panel_bg_color";
-    private static final String RECENT_CARD_BG_COLOR =
+    /*private static final String RECENT_CARD_BG_COLOR =
             "recent_card_bg_color";
-    /*private static final String RECENT_CARD_TEXT_COLOR =
+    private static final String RECENT_CARD_TEXT_COLOR =
             "recent_card_text_color";*/
 
     private CustomSeekBarPreference mMaxApps;
@@ -73,7 +73,7 @@ public class SlimRecentPanel extends /*Slim*/SettingsPreferenceFragment implemen
     private CustomSeekBarPreference mRecentPanelScale;
     private ListPreference mRecentPanelExpandedMode;
     private ColorPickerPreference mRecentPanelBgColor;
-    private ColorPickerPreference mRecentCardBgColor;
+    //private ColorPickerPreference mRecentCardBgColor;
     //private ColorPickerPreference mRecentCardTextColor;
 
     @Override
@@ -117,7 +117,7 @@ public class SlimRecentPanel extends /*Slim*/SettingsPreferenceFragment implemen
                     Settings.System.RECENT_PANEL_BG_COLOR,
                     intHex);
             return true;
-        } else if (preference == mRecentCardBgColor) {
+        /*} else if (preference == mRecentCardBgColor) {
             String hex = ColorPickerPreference.convertToARGB(
                     Integer.valueOf(String.valueOf(newValue)));
             if (hex.equals("#00ffffff")) {
@@ -130,7 +130,7 @@ public class SlimRecentPanel extends /*Slim*/SettingsPreferenceFragment implemen
                     Settings.System.RECENT_CARD_BG_COLOR,
                     intHex);
             return true;
-        /*} else if (preference == mRecentCardTextColor) {
+        } else if (preference == mRecentCardTextColor) {
             String hex = ColorPickerPreference.convertToARGB(
                     Integer.valueOf(String.valueOf(newValue)));
             if (hex.equals("#00ffffff")) {
@@ -203,7 +203,7 @@ public class SlimRecentPanel extends /*Slim*/SettingsPreferenceFragment implemen
         mRecentPanelBgColor.setNewPreviewColor(intColor);
 
         // Recent card background color
-        mRecentCardBgColor =
+        /*mRecentCardBgColor =
                 (ColorPickerPreference) findPreference(RECENT_CARD_BG_COLOR);
         mRecentCardBgColor.setOnPreferenceChangeListener(this);
         final int intColorCard = Settings.System.getInt(getContext().getContentResolver(),
@@ -217,7 +217,7 @@ public class SlimRecentPanel extends /*Slim*/SettingsPreferenceFragment implemen
         mRecentCardBgColor.setNewPreviewColor(intColorCard);
 
         // Recent card text color
-        /*mRecentCardTextColor =
+        mRecentCardTextColor =
                 (ColorPickerPreference) findPreference(RECENT_CARD_TEXT_COLOR);
         mRecentCardTextColor.setOnPreferenceChangeListener(this);
         final int intColorText = Settings.System.getInt(getContext().getContentResolver(),
