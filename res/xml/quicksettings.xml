@@ -213,6 +213,12 @@
         android:entryValues="@array/qs_tile_animation_interpolator_values"
         android:persistent="false" />
 
+    <PreferenceScreen
+        android:key="qs_weather"
+        android:title="@string/weather_title"
+        android:summary="@string/weather_config_summary"
+        android:fragment="com.gzr.teslacoil.fragments.OmniJawsSettings" />
+
     <com.gzr.teslacoil.preference.SystemSettingSwitchPreference
         android:key="qs_tile_title_visibility"
         android:title="@string/qs_tile_title_visibility_title"
