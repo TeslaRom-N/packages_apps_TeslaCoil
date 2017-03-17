@@ -46,6 +46,7 @@
     <string name="statusbar_notifications_category">Notifications</string>
     <string name="statusbar_items_category">Statusbar items</string>
     <string name="recents_category">Recents</string>
+    <string name="other_settings">Others</string>
 
     <string name="teslacoil_summary_title">Customize your device</string>
 
