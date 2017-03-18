@@ -29,9 +29,9 @@
 
          <Preference
             android:key="expanded_desktop"
-            android:fragment="com.android.settings.applications.ExpandedDesktopPreferenceFragment"
+            android:fragment="com.gzr.teslacoil.fragments.ExpandedDesktop"
             android:layout="@layout/preference_expanded_desktop"
-            android:title="@string/power_menu_expanded_desktop" />
+            android:title="@string/expanded_desktop_category" />
 
          <PreferenceScreen
             android:key="blur"
