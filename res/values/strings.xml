@@ -47,6 +47,7 @@
     <string name="statusbar_items_category">Statusbar items</string>
     <string name="recents_category">Recents</string>
     <string name="other_settings">Others</string>
+    <string name="headset_settings">Headset</string>
 
     <string name="teslacoil_summary_title">Customize your device</string>
 
@@ -1013,4 +1014,8 @@
     <!-- No navigation notification -->
     <string name="no_navigation_notif_title">No navigation method reminder</string>
     <string name="no_navigation_notif_summary">Show a notification when no navigation method enabled</string>
+
+    <!-- Launch music player when headset is connected -->
+    <string name="headset_connect_player_title">Launch music app</string>
+    <string name="headset_connect_player_summary">Launch the default music app when headset is connected</string>
 </resources>
