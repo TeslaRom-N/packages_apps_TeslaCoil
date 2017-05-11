@@ -38,6 +38,10 @@ import com.android.settings.Utils;
 
 public class Headset extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
 
+private static final String HEADSET_CONNECT_PLAYER = "headset_connect_player";
+
+private ListPreference mLaunchPlayerHeadsetConnection;
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -45,6 +49,13 @@ public class Headset extends SettingsPreferenceFragment implements OnPreferenceC
         addPreferencesFromResource(R.xml.headset);
 
         final ContentResolver resolver = getActivity().getContentResolver();
+
+        mLaunchPlayerHeadsetConnection = (ListPreference) findPreference(HEADSET_CONNECT_PLAYER);
+        int mLaunchPlayerHeadsetConnectionValue = Settings.System.getIntForUser(resolver,
+                Settings.System.HEADSET_CONNECT_PLAYER, 0, UserHandle.USER_CURRENT);
+        mLaunchPlayerHeadsetConnection.setValue(Integer.toString(mLaunchPlayerHeadsetConnectionValue));
+        mLaunchPlayerHeadsetConnection.setSummary(mLaunchPlayerHeadsetConnection.getEntry());
+        mLaunchPlayerHeadsetConnection.setOnPreferenceChangeListener(this);
     }
 
     @Override
@@ -53,11 +64,23 @@ public class Headset extends SettingsPreferenceFragment implements OnPreferenceC
     }
 
     @Override
-    public void onResume() {
-        super.onResume();
+    public boolean onPreferenceChange(Preference preference, Object newValue) {
+        ContentResolver resolver = getActivity().getContentResolver();
+
+        if (preference == mLaunchPlayerHeadsetConnection) {
+            int mLaunchPlayerHeadsetConnectionValue = Integer.valueOf((String) newValue);
+            int index = mLaunchPlayerHeadsetConnection.findIndexOfValue((String) newValue);
+            mLaunchPlayerHeadsetConnection.setSummary(
+                    mLaunchPlayerHeadsetConnection.getEntries()[index]);
+            Settings.System.putIntForUser(resolver, Settings.System.HEADSET_CONNECT_PLAYER,
+                    mLaunchPlayerHeadsetConnectionValue, UserHandle.USER_CURRENT);
+            return true;
+        }
+        return false;
     }
 
-    public boolean onPreferenceChange(Preference preference, Object value) {
-         return true;
+    @Override
+    public void onResume() {
+        super.onResume();
     }
 }
