@@ -28,11 +28,10 @@
         android:summary="@string/nav_bar_dynamic_summary"
         android:defaultValue="false" />
 
-    <com.gzr.teslacoil.preference.SystemSettingSwitchPreference
-        android:key="no_navigation_notif"
+    <SwitchPreference
+        android:key="no_navigation_notification"
         android:title="@string/no_navigation_notif_title"
-        android:summary="@string/no_navigation_notif_summary"
-        android:defaultValue="true" />
+        android:summary="@string/no_navigation_notif_summary" />
 
     <PreferenceCategory
         android:key="category_navbar_interface"

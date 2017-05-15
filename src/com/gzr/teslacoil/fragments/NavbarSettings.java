@@ -46,6 +46,7 @@ import com.gzr.teslacoil.preference.CustomSeekBarPreference;
 public class NavbarSettings extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
 
     private static final String NAVBAR_VISIBILITY = "navbar_visibility";
+    private static final String NO_NAVIGATION_NOTIFICATION = "no_navigation_notification";
     private static final String KEY_NAVBAR_MODE = "navbar_mode";
     private static final String KEY_FLING_NAVBAR_SETTINGS = "fling_settings";
     private static final String KEY_CATEGORY_NAVIGATION_INTERFACE = "category_navbar_interface";
@@ -57,6 +58,7 @@ public class NavbarSettings extends SettingsPreferenceFragment implements OnPref
     private static final String KEY_NAVIGATION_WIDTH = "navbar_width";
 
     private SwitchPreference mNavbarVisibility;
+    private SwitchPreference mNoNavigationNotification;
     private ListPreference mNavbarMode;
     private PreferenceScreen mFlingSettings;
     private PreferenceCategory mNavInterface;
@@ -74,6 +76,7 @@ public class NavbarSettings extends SettingsPreferenceFragment implements OnPref
         mNavInterface = (PreferenceCategory) findPreference(KEY_CATEGORY_NAVIGATION_INTERFACE);
         mNavGeneral = (PreferenceCategory) findPreference(KEY_CATEGORY_NAVIGATION_GENERAL);
         mNavbarVisibility = (SwitchPreference) findPreference(NAVBAR_VISIBILITY);
+        mNoNavigationNotification = (SwitchPreference) findPreference(NO_NAVIGATION_NOTIFICATION);
         mNavbarMode = (ListPreference) findPreference(KEY_NAVBAR_MODE);
         mFlingSettings = (PreferenceScreen) findPreference(KEY_FLING_NAVBAR_SETTINGS);
         mSmartbarSettings = (PreferenceScreen) findPreference(KEY_SMARTBAR_SETTINGS);
@@ -83,6 +86,11 @@ public class NavbarSettings extends SettingsPreferenceFragment implements OnPref
                 DUActionUtils.hasNavbarByDefault(getActivity()) ? 1 : 0) != 0;
         updateBarVisibleAndUpdatePrefs(showing);
         mNavbarVisibility.setOnPreferenceChangeListener(this);
+
+        boolean isNavNotificationEnabled = Settings.System.getIntForUser(getContentResolver(),
+                Settings.System.NO_NAVIGATION_NOTIFICATION, 1, UserHandle.USER_CURRENT) != 0;
+        mNoNavigationNotification.setChecked(isNavNotificationEnabled);
+        mNoNavigationNotification.setOnPreferenceChangeListener(this);
 
         int mode = Settings.Secure.getInt(getContentResolver(), Settings.Secure.NAVIGATION_BAR_MODE,
                 0);
@@ -156,6 +164,12 @@ public class NavbarSettings extends SettingsPreferenceFragment implements OnPref
             int val = (Integer) newValue;
             Settings.Secure.putIntForUser(getContentResolver(),
                     Settings.Secure.NAVIGATION_BAR_WIDTH, val, UserHandle.USER_CURRENT);
+            return true;
+        } else if (preference.equals(mNoNavigationNotification)) {
+            boolean isNavNotificationEnabled = ((Boolean)newValue);
+            Settings.System.putIntForUser(getContentResolver(), Settings.System.NO_NAVIGATION_NOTIFICATION,
+                    isNavNotificationEnabled ? 1 : 0, UserHandle.USER_CURRENT);
+            mNoNavigationNotification.setChecked(isNavNotificationEnabled);
             return true;
         }
         return false;
