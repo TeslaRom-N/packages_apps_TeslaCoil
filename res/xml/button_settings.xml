@@ -53,6 +53,12 @@
         android:summary="@string/volume_answer_call_summary"
         android:defaultValue="false" />
 
+    <com.gzr.teslacoil.preference.SystemSettingSwitchPreference
+        android:key="allow_incall_home"
+        android:title="@string/allow_incall_home_title"
+        android:summary="@string/allow_incall_home_summary"
+        android:defaultValue="true" />
+
     <SwitchPreference
         android:key="home_button_wake"
         android:summary="@string/home_button_wake_summary"
