@@ -39,6 +39,8 @@ import com.android.internal.logging.MetricsProto.MetricsEvent;
 import com.android.internal.utils.du.ActionConstants;
 import com.android.internal.utils.du.DUActionUtils;
 
+import com.gzr.teslacoil.preference.CustomSeekBarPreference;
+
 public class ButtonSettings extends ActionFragment implements OnPreferenceChangeListener {
 
     private static final String HWKEY_DISABLE = "hardware_keys_disable";
@@ -46,6 +48,7 @@ public class ButtonSettings extends ActionFragment implements OnPreferenceChange
     private static final String HOME_BUTTON_WAKE = "home_button_wake";
     private static final String VOLUME_ROCKER_WAKE = "volume_rocker_wake";
     public static final String VOLUME_ROCKER_MUSIC_CONTROLS = "volume_rocker_music_controls";
+    private static final String HWKEYS_BACKLIGHT_VAL = "hardware_keys_light_val";
 
     // category keys
     private static final String CATEGORY_HWKEY = "hardware_keys";
@@ -72,6 +75,7 @@ public class ButtonSettings extends ActionFragment implements OnPreferenceChange
     private SwitchPreference mVolumeRockerWake;
     private SwitchPreference mVolumeRockerMusicControl;
     private SwitchPreference mHwKeyDisable;
+    private CustomSeekBarPreference mHwKeysBackLightVal;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -94,6 +98,13 @@ public class ButtonSettings extends ActionFragment implements OnPreferenceChange
         } else {
             prefScreen.removePreference(hwkeyCat);
         }
+
+        mHwKeysBackLightVal = (CustomSeekBarPreference) findPreference(HWKEYS_BACKLIGHT_VAL);
+        mHwKeysBackLightVal.setValue(Settings.Secure.getInt(getContentResolver(),
+                    Settings.Secure.HARDWAREKEYS_BACKLIGHT_VAL, 255));
+        // If the keys disabled, button light is disabled
+        mHwKeysBackLightVal.setEnabled(keysDisabled == 0);
+        mHwKeysBackLightVal.setOnPreferenceChangeListener(this);
 
         // bits for hardware keys present on device
         final int deviceKeys = getResources().getInteger(
@@ -220,6 +231,14 @@ public class ButtonSettings extends ActionFragment implements OnPreferenceChange
             Settings.Secure.putInt(getContentResolver(), Settings.Secure.HARDWARE_KEYS_DISABLE,
                     value ? 1 : 0);
             setActionPreferencesEnabled(!value);
+
+            // If the keys disabled, button light is disabled
+            mHwKeysBackLightVal.setEnabled(!value);
+            return true;
+        } else if (preference == mHwKeysBackLightVal) {
+            int width = ((Integer)newValue).intValue();
+            Settings.Secure.putInt(getContentResolver(),
+                    Settings.Secure.HARDWAREKEYS_BACKLIGHT_VAL, width);
             return true;
         }
         return false;

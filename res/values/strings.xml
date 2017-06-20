@@ -345,6 +345,7 @@
     <string name="hardware_keys_double_tap_title">Double tap action</string>
     <string name="hardware_keys_category">Hardware keys</string>
     <string name="hardware_keys_disable_title">Disable/enable hardware keys</string>
+    <string name="hardware_keys_light_val_title">Set backlight</string>
 
     <!-- Actions dialog and default task values set in ActionPreference xml-->
     <string name="choose_action_title">Choose action</string>
