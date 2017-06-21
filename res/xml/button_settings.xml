@@ -80,6 +80,13 @@
             settings:min="0"
             android:defaultValue="255"
             settings:units="dp" />
+        <com.gzr.teslacoil.preference.CustomSeekBarPreference
+            android:key="hardware_keys_light_timeout"
+            android:title="@string/hardware_keys_light_timeout_title"
+            settings:max="35"
+            settings:min="0"
+            android:defaultValue="5"
+            settings:units="dp" />
     </PreferenceCategory>
 
     <PreferenceCategory

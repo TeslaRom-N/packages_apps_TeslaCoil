@@ -49,6 +49,7 @@ public class ButtonSettings extends ActionFragment implements OnPreferenceChange
     private static final String VOLUME_ROCKER_WAKE = "volume_rocker_wake";
     public static final String VOLUME_ROCKER_MUSIC_CONTROLS = "volume_rocker_music_controls";
     private static final String HWKEYS_BACKLIGHT_VAL = "hardware_keys_light_val";
+    private static final String HWKEYS_BACKLIGHT_TIMEOUT = "hardware_keys_light_timeout";
 
     // category keys
     private static final String CATEGORY_HWKEY = "hardware_keys";
@@ -76,6 +77,7 @@ public class ButtonSettings extends ActionFragment implements OnPreferenceChange
     private SwitchPreference mVolumeRockerMusicControl;
     private SwitchPreference mHwKeyDisable;
     private CustomSeekBarPreference mHwKeysBackLightVal;
+    private CustomSeekBarPreference mHwKeysBackLightTimeout;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -105,6 +107,13 @@ public class ButtonSettings extends ActionFragment implements OnPreferenceChange
         // If the keys disabled, button light is disabled
         mHwKeysBackLightVal.setEnabled(keysDisabled == 0);
         mHwKeysBackLightVal.setOnPreferenceChangeListener(this);
+
+        mHwKeysBackLightTimeout = (CustomSeekBarPreference) findPreference(HWKEYS_BACKLIGHT_TIMEOUT);
+        mHwKeysBackLightTimeout.setValue(Settings.System.getInt(getContentResolver(),
+                    Settings.System.BUTTON_BACKLIGHT_TIMEOUT, 5*1000)/1000);
+        // If the keys disabled, button light is disabled
+        mHwKeysBackLightTimeout.setEnabled(keysDisabled == 0);
+        mHwKeysBackLightTimeout.setOnPreferenceChangeListener(this);
 
         // bits for hardware keys present on device
         final int deviceKeys = getResources().getInteger(
@@ -234,11 +243,17 @@ public class ButtonSettings extends ActionFragment implements OnPreferenceChange
 
             // If the keys disabled, button light is disabled
             mHwKeysBackLightVal.setEnabled(!value);
+            mHwKeysBackLightTimeout.setEnabled(!value);
             return true;
         } else if (preference == mHwKeysBackLightVal) {
             int width = ((Integer)newValue).intValue();
             Settings.Secure.putInt(getContentResolver(),
                     Settings.Secure.HARDWAREKEYS_BACKLIGHT_VAL, width);
+            return true;
+        } else if (preference == mHwKeysBackLightTimeout) {
+            int width = ((Integer)newValue).intValue();
+            Settings.System.putInt(getContentResolver(),
+                    Settings.System.BUTTON_BACKLIGHT_TIMEOUT, width * 1000);
             return true;
         }
         return false;
