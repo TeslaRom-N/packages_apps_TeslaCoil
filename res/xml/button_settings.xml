@@ -84,9 +84,9 @@
             android:key="hardware_keys_light_timeout"
             android:title="@string/hardware_keys_light_timeout_title"
             settings:max="35"
-            settings:min="0"
+            settings:min="1"
             android:defaultValue="5"
-            settings:units="dp" />
+            settings:units="seconds" />
     </PreferenceCategory>
 
     <PreferenceCategory
