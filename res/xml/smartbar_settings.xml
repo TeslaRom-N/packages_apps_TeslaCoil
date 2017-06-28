@@ -50,6 +50,13 @@
         android:summary="@string/one_handed_mode_summary"
         android:defaultValue="false" />
 
+    <ListPreference
+        android:key="smartbar_longpress_delay"
+        android:title="@string/smartbar_longpress_delay_title"
+        android:entries="@array/smartbar_longpress_delay_entries"
+        android:entryValues="@array/smartbar_longpress_delay_values"
+        android:summary="@string/smartbar_longpress_delay_summary" />
+
     <com.gzr.teslacoil.preference.CustomSeekBarPreference
         android:key="navbar_buttons_alpha"
         android:title="@string/navbar_buttons_alpha_title"
