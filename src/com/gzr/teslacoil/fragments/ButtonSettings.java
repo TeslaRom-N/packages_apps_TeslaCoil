@@ -97,23 +97,27 @@ public class ButtonSettings extends ActionFragment implements OnPreferenceChange
                     UserHandle.USER_CURRENT);
             mHwKeyDisable.setChecked(keysDisabled != 0);
             mHwKeyDisable.setOnPreferenceChangeListener(this);
+
+            /* Devices have back/app-switch/assist, but what is consistent
+             * as of now is HOME key.
+             * Hence, Button Back Light settings depends on presence of HOME button.
+             */
+            mHwKeysBackLightVal = (CustomSeekBarPreference) findPreference(HWKEYS_BACKLIGHT_VAL);
+            mHwKeysBackLightVal.setValue(Settings.Secure.getInt(getContentResolver(),
+                        Settings.Secure.HARDWAREKEYS_BACKLIGHT_VAL, 255));
+            // If the keys disabled, button light is disabled
+            mHwKeysBackLightVal.setEnabled(keysDisabled == 0);
+            mHwKeysBackLightVal.setOnPreferenceChangeListener(this);
+
+            mHwKeysBackLightTimeout = (CustomSeekBarPreference) findPreference(HWKEYS_BACKLIGHT_TIMEOUT);
+            mHwKeysBackLightTimeout.setValue(Settings.System.getInt(getContentResolver(),
+                        Settings.System.BUTTON_BACKLIGHT_TIMEOUT, 5*1000)/1000);
+            // If the keys disabled, button light is disabled
+            mHwKeysBackLightTimeout.setEnabled(keysDisabled == 0);
+            mHwKeysBackLightTimeout.setOnPreferenceChangeListener(this);
         } else {
             prefScreen.removePreference(hwkeyCat);
         }
-
-        mHwKeysBackLightVal = (CustomSeekBarPreference) findPreference(HWKEYS_BACKLIGHT_VAL);
-        mHwKeysBackLightVal.setValue(Settings.Secure.getInt(getContentResolver(),
-                    Settings.Secure.HARDWAREKEYS_BACKLIGHT_VAL, 255));
-        // If the keys disabled, button light is disabled
-        mHwKeysBackLightVal.setEnabled(keysDisabled == 0);
-        mHwKeysBackLightVal.setOnPreferenceChangeListener(this);
-
-        mHwKeysBackLightTimeout = (CustomSeekBarPreference) findPreference(HWKEYS_BACKLIGHT_TIMEOUT);
-        mHwKeysBackLightTimeout.setValue(Settings.System.getInt(getContentResolver(),
-                    Settings.System.BUTTON_BACKLIGHT_TIMEOUT, 5*1000)/1000);
-        // If the keys disabled, button light is disabled
-        mHwKeysBackLightTimeout.setEnabled(keysDisabled == 0);
-        mHwKeysBackLightTimeout.setOnPreferenceChangeListener(this);
 
         // bits for hardware keys present on device
         final int deviceKeys = getResources().getInteger(
