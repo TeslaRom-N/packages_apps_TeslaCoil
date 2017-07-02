@@ -75,7 +75,7 @@
             android:key="slim_recents"
             android:title="@string/slim_recents_title">
 
-         <com.gzr.teslacoil.preference.SystemSettingSwitchPreference
+         <SwitchPreference
             android:key="use_slim_recents"
             android:title="@string/use_slim_recents_title"
             android:summary="@string/use_slim_recents_summary"
